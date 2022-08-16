@@ -23,13 +23,13 @@ const WordsSection = () => {
           width: 100vw;
           display: flex;
           flex-direction: row;
-          background-color: white;
           justify-content: space-between;
           padding: 4.5em 2em 4em 5em;
+          border: solid 5px black;
+          margin: 1em 0;
         }
 
         .words-section-container h2:first-child {
-          background-color: skyblue;
           padding: 1em;
           max-width: 35%;
         }
@@ -38,7 +38,6 @@ const WordsSection = () => {
           font-size: 1.5em;
           width: 55%;
           padding: 1em;
-          background-color: skyblue;
         }
 
         .words-section-container ul {

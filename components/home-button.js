@@ -1,11 +1,6 @@
 import React, { useEffect } from "react";
-// import { scroll, animate } from "motion";
 
 export const HomeButton = React.forwardRef(({ onClick, href }, ref) => {
-  //   useEffect(() => {
-  //     scroll(animate("#home-button", { rotate: "180deg" }));
-  //   }, []);
-
   return (
     <svg
       id="home-button"

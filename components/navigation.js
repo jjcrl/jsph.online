@@ -21,7 +21,7 @@ export const Navigation = () => {
               toggleNav();
             }}
           >
-            burger
+            options
           </button>
         </nav>
       </header>
@@ -58,7 +58,7 @@ export const Navigation = () => {
         }
 
         .nav-options {
-          background-color: blue;
+          background-color: black;
           min-height: 100vh;
           min-width: 100vw;
           padding: 0;
@@ -68,6 +68,7 @@ export const Navigation = () => {
           display: flex;
           flex-direction: column;
           display: ${toggle === false ? `none` : null};
+          color: white;
         }
 
         .options-container {

@@ -25,11 +25,11 @@ const Footer = () => {
         .footer-container {
           width: 100vw;
           height: min-content;
-          background-color: olive;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           padding: 2em 5em 3em 2em;
+          border: solid 5px black;
         }
 
         .footer-container ul {

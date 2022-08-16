@@ -13,7 +13,6 @@ const Hero = () => {
 
       <style jsx>{`
         section {
-          background-color: red;
           width: 100vw;
           height: 95vh;
           padding: 0;

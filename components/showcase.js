@@ -1,8 +1,32 @@
+import { useContext, useEffect, useState } from "react";
+import { SmoothScrollContext } from "../src/contexts/SmoothScroll.context";
+
 const ShowCase = ({ works }) => {
+  const { scroll } = useContext(SmoothScrollContext);
+  const [currColor, setCurrColor] = useState("pink");
+
+  useEffect(() => {
+    if (scroll) {
+      scroll.on("scroll", (obj) => {
+        const elements = obj.currentElements;
+        if (elements) {
+          if (elements.red) {
+            setCurrColor("red");
+          }
+          if (elements.gold && elements.gold.progress > 0.2) {
+            setCurrColor("gold");
+          }
+          if (elements.green && elements.green.progress > 0.2) {
+            setCurrColor("green");
+          }
+        }
+      });
+    }
+  }, [scroll]);
+
   return (
     <>
       <section data-scroll-section id="target" data-scroll-id="target">
-        {/* <div id="target" data-scroll-id="target"></div> */}
         <div
           className="words"
           data-scroll
@@ -18,13 +42,13 @@ const ShowCase = ({ works }) => {
         </div>
 
         <div className="images" data-scroll>
-          <div className="image-container" data-scroll-id="image0">
+          <div className="image-container" data-scroll data-scroll-id="red">
             <p>1</p>
           </div>
-          <div className="image-container" data-scroll-id="image1">
+          <div className="image-container" data-scroll data-scroll-id="gold">
             <p>2</p>
           </div>
-          <div className="image-container" data-scroll-id="image3">
+          <div className="image-container" data-scroll data-scroll-id="green">
             <p>3</p>
           </div>
         </div>
@@ -39,26 +63,47 @@ const ShowCase = ({ works }) => {
           }
 
           .words {
-            background-color: goldenrod;
+            background-color: ${currColor};
             flex: 1;
             height: 100vh;
-            border: solid 1px red;
+          }
+
+          .words-container {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding: 5em;
           }
 
           .images {
             flex: 1;
-            background-color: peachpuff;
+            background-color: white;
+          }
+
+          .images div:first-child {
+            background-color: red;
+          }
+
+          .images div:nth-child(2) {
+            background-color: gold;
+          }
+
+          .images div:nth-child(3) {
+            background-color: green;
           }
 
           .image-container {
-            min-height: 100vh;
-            min-width: 50vw;
+            height: 100vh;
+            width: 50vw;
           }
 
           .images p {
             height: 100%;
             width: 100%;
             object-fit: contain;
+            padding-bottom: 125%;
           }
         `}
       </style>
