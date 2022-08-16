@@ -3,7 +3,7 @@ const Footer = () => {
     <>
       <footer
         data-scroll-section
-        className="bg-slate-300	w-screen h-min flex flex-row justify-between p-10 m-0"
+        className="bg-pinkflame	w-screen h-min flex flex-row justify-between p-7 m-0 pt-20"
       >
         <section>
           <ul className="list-none p-0 m-0 leading-8">

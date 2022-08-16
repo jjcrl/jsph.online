@@ -12,15 +12,20 @@ body {
   font-family: "system-ui", sans-serif;
   padding: 0;
   margin: 0;
+  line-height: 4rem;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-weight: 500;
 }
 
 p {
-  line-height: 1.5;
+  line-height: 5rem;
 }
 
 h1 {
   font-size: 10em;
   margin: auto;
+  font-weight: 900;
 }
 
 h2 {
@@ -38,9 +43,24 @@ h4 {
 h5 {
   font-size: 2em;
   margin: auto;
+  line-height: 2.5rem;
 }
 
 h6 {
   font-size: 1em;
   margin: auto;
+  line-height: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+li {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  letter-spacing: 4px;
+  font-weight: 700;
 }

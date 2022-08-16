@@ -10,7 +10,12 @@ export default function Work1() {
       <Topper />
       <WordsSection />
       <ShowCase />
-      <Gallery />
+      <Gallery
+        direction="col"
+        bg="black"
+        height="96"
+        items={[{ x: 1 }, { x: 2 }, { x: 3 }]}
+      />
       <WordsSection />
       <Footer />
     </>
