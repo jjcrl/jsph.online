@@ -1,9 +1,12 @@
 const Footer = () => {
   return (
     <>
-      <footer data-scroll-section className="footer-container">
+      <footer
+        data-scroll-section
+        className="bg-slate-300	w-screen h-min flex flex-row justify-between p-10 m-0"
+      >
         <section>
-          <ul>
+          <ul className="list-none p-0 m-0 leading-8">
             <li>Salford,GB</li>
             <li>53.4875° N</li>
             <li>2.2901° W</li>
@@ -13,7 +16,7 @@ const Footer = () => {
           <p>sticker</p>
         </section>
         <section>
-          <ul>
+          <ul className="list-none p-0 m-0 leading-8 text-right">
             <li>github</li>
             <li>linkedin</li>
             <li>hello@jsph.dev</li>
@@ -21,35 +24,7 @@ const Footer = () => {
         </section>
       </footer>
 
-      <style jsx>{`
-        .footer-container {
-          width: 100vw;
-          height: min-content;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          padding: 2em 5em 3em 2em;
-          border: solid 5px black;
-        }
-
-        .footer-container ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          line-height: 2.5em;
-        }
-
-        .footer-container li {
-          font-size: 2em;
-          letter-spacing: 3px;
-          font-weight: 500;
-          font-style: italix;
-        }
-
-        .footer-container section:last-child {
-          text-align: right !important;
-        }
-      `}</style>
+      <style jsx>{``}</style>
     </>
   );
 };

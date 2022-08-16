@@ -1,64 +1,28 @@
 const WordsSection = () => {
   return (
-    <>
-      <section className="words-section-container" data-scroll-section>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing.</h2>
+    <section
+      className="bg-white w-screen h-max flex flex-row justify-between m-1 p-20"
+      data-scroll-section
+    >
+      <h5>
+        Lorem ipsum dolor sit amet, consectetur adipiscing.Aliquam neque massa,
+        dictum non ex ullamcorper, imperdiet rutrum turpis.
+      </h5>
 
-        <div className="flex-end">
-          <h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a massa
-            sed ligula posuere tempor ut nec erat.
-          </h4>
-
-          <ul>
-            <li>Vivamus ac est sed felis viverra pharetra vitae vel arcu.</li>
-            <li>Praesent dictum, et eleifend sem.</li>
-            <li>Etiam et ante suscipit, mattis metus sed, enim.</li>
-          </ul>
-        </div>
-      </section>
-
-      <style jsx>{`
-        .words-section-container {
-          width: 100vw;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          padding: 4.5em 2em 4em 5em;
-          border: solid 5px black;
-          margin: 1em 0;
-        }
-
-        .words-section-container h2:first-child {
-          padding: 1em;
-          max-width: 35%;
-        }
-
-        .words-section-container div:nth-child(2) {
-          font-size: 1.5em;
-          width: 55%;
-          padding: 1em;
-        }
-
-        .words-section-container ul {
-          list-style: none;
-          padding: 1em;
-          margin: 0;
-          font-size: 0.8em;
-          font-style: italic;
-          opacity: 80%;
-        }
-
-        .words-section-container li {
-          padding-bottom: 0.25em;
-          font-size: 1.25em;
-        }
-
-        .words-section-container li::before {
-          content: "- ";
-        }
-      `}</style>
-    </>
+      <div className="flex flex-col w-fit">
+        <h6>
+          Vestibulum facilisis libero vitae imperdiet vehicula. Donec facilisis
+          congue orci ac elementum. Suspendisse rhoncus arcu metus, eget
+          faucibus nulla iaculis quis
+        </h6>
+        <h6>
+          Mauris tempus tristique eros, ac facilisis libero varius nec. Proin
+          tristique, leo eu gravida dapibus, sem est posuere tellus, quis
+          pulvinar diam lectus vel erat. Mauris tristique luctus nunc, in tempor
+          nisl.
+        </h6>
+      </div>
+    </section>
   );
 };
 

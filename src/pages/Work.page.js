@@ -4,28 +4,29 @@ import Link from "next/link";
 export default function Work() {
   return (
     <>
-      <section data-scroll-section>
+      <section data-scroll-section className="flex flex-col">
+        <WordsSection />
         <Link href={"/work/work1"}>
-          <div className="work-container" id="works-1">
+          <div className="h-screen w-screen text-white" id="works-1">
             <div className="show">
-              <p>title</p>
-              <p>line</p>
+              <h3>title</h3>
+              <h4>line</h4>
             </div>
           </div>
         </Link>{" "}
         <Link href={"/work/work2"}>
-          <div className="work-container" id="works-2">
+          <div className="h-screen w-screen text-white opacity-0	" id="works-2">
             <div className="show">
-              <p>title</p>
-              <p>line</p>
+              <h3>title</h3>
+              <h4>line</h4>
             </div>
           </div>
         </Link>{" "}
         <Link href={"/work/work3"}>
-          <div className="work-container" id="works-3">
+          <div className="h-screen w-screen text-white opacity-0	" id="works-3">
             <div className="show">
-              <p>title</p>
-              <p>line</p>
+              <h3>title</h3>
+              <h4>line</h4>
             </div>
           </div>
         </Link>
@@ -35,11 +36,6 @@ export default function Work() {
 
       <style jsx>
         {`
-          section {
-            disaply: flex;
-            flex-direction: column;
-          }
-
           .show {
             display: flex;
             flex-direction: column;
@@ -52,21 +48,6 @@ export default function Work() {
 
           div:hover .show {
             background-color: rgba(0, 0, 0, 0.5);
-          }
-
-          div:hover p {
-            opacity: 1;
-          }
-
-          .work-container {
-            width: 100vw;
-            height: 100vh;
-          }
-
-          .work-container p {
-            font-size: 2.5em;
-            opacity: 0;
-            color: white;
           }
         `}
       </style>

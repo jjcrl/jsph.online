@@ -1,36 +1,16 @@
 const Gallery = ({ works }) => {
   return (
-    <>
-      <section data-scroll-section>
-        <div className="work-item-container">
-          <p>1</p>
-        </div>
-        <div className="work-item-container">
-          <p>2</p>
-        </div>
-        <div className="work-item-container">
-          <p>3</p>
-        </div>
-      </section>
-
-      <style jsx>{`
-        section {
-          width: 100vw;
-          display: flex;
-          flex-direction: column;
-        }
-
-        .work-item-container {
-          background-color: black;
-          margin: 1em;
-          height: 90vh;
-        }
-
-        .work-item-container p {
-          color: white;
-        }
-      `}</style>
-    </>
+    <section data-scroll-section className="flex flex-col w-screen bg-white">
+      <div className="m-5 bg-black h-96">
+        <p>1</p>
+      </div>
+      <div className="m-5 bg-black h-96">
+        <p>2</p>
+      </div>
+      <div className="m-5 bg-black h-96">
+        <p>3</p>
+      </div>
+    </section>
   );
 };
 

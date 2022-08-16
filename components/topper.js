@@ -2,7 +2,7 @@ const Topper = () => {
   return (
     <>
       <section data-scroll-section>
-        <div className="topper-container">
+        <div className="w-screen h-screen flex flex-col justify-end pb-20 pl-20 bg-white">
           <h3>
             {" "}
             Cras felis sem, sagittis a porttitor quis, semper vel ipsum. Nullam
@@ -15,18 +15,6 @@ const Topper = () => {
           </h4>
         </div>
       </section>
-
-      <style jsx>
-        {`
-          .topper-container {
-            width: 100vw;
-            height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-          }
-        `}
-      </style>
     </>
   );
 };

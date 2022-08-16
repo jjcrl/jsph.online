@@ -11,11 +11,14 @@ export const Navigation = () => {
 
   return (
     <>
-      <header className="main-nav" data-scroll-section>
+      <header
+        className="flex flex-row w-screen fixed justify-between pr-5 z-50"
+        data-scroll-section
+      >
         <Link href="/" passHref>
           <HomeButton />
         </Link>
-        <nav className="nav-main">
+        <nav className="m-0 self-center">
           <button
             onClick={() => {
               toggleNav();
@@ -26,8 +29,14 @@ export const Navigation = () => {
         </nav>
       </header>
 
-      <div className="nav-options">
-        <div className="options-container">
+      <div
+        className="bg-black min-h-screen min-w-screen p-0 m-0 fixed z-40 flex flex-col text-white"
+        id="toggle"
+        onClick={() => {
+          toggleNav();
+        }}
+      >
+        <div className="m-auto flex flex-row flex-wrap w-3/4">
           <Link href={"/work"}>
             <p
               onClick={() => {
@@ -60,47 +69,8 @@ export const Navigation = () => {
       </div>
 
       <style jsx>{`
-        .nav-main a {
-          margin: 0 0.5em;
-          font-size: 1.5em;
-          font-family: GT Maru Trial;
-        }
-        a {
-          color: black;
-          text-decoration: none;
-          mix-blend-mode: difference;
-        }
-        .main-nav {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          width: 100vw;
-          position: fixed;
-          justify-content: space-between;
-          padding-right: 2em;
-          z-index: 100;
-        }
-
-        .nav-options {
-          background-color: black;
-          min-height: 100vh;
-          min-width: 100vw;
-          padding: 0;
-          margin: 0;
-          position: fixed;
-          z-index: 99;
-          display: flex;
-          flex-direction: column;
+        #toggle {
           display: ${toggle === false ? `none` : null};
-          color: white;
-        }
-
-        .options-container {
-          margin: auto;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          width: 70%;
         }
 
         p {

@@ -1,13 +1,11 @@
 import Layout from "../components/layout";
-
-require("../locomotive-scroll.css");
-require("../style.css");
-
+require("../styles/locomotive-scroll.css");
+require("../styles/globals.css");
 export default function NextApp({ Component, pageProps }) {
   return (
     <>
       <Layout>
-        <main data-scroll-container className="container">
+        <main data-scroll-container className="w-screen">
           <Component {...pageProps} />
         </main>
       </Layout>
