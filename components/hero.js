@@ -19,6 +19,7 @@ const Hero = () => {
           margin: 0;
           display: flex;
           flex-direction: column;
+          background-color: white;
         }
 
         .flex-row-space-between {

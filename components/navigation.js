@@ -28,9 +28,33 @@ export const Navigation = () => {
 
       <div className="nav-options">
         <div className="options-container">
-          <p>Work,</p>
-          <p>About,</p>
-          <p>Contact,</p>
+          <Link href={"/work"}>
+            <p
+              onClick={() => {
+                toggleNav();
+              }}
+            >
+              Work,
+            </p>
+          </Link>
+          <Link href={"/about"}>
+            <p
+              onClick={() => {
+                toggleNav();
+              }}
+            >
+              About,
+            </p>
+          </Link>
+          <Link href={"/contact"}>
+            <p
+              onClick={() => {
+                toggleNav();
+              }}
+            >
+              Contact,
+            </p>
+          </Link>
           <p>Posts</p>
         </div>
       </div>
