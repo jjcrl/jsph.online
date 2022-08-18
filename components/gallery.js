@@ -5,7 +5,7 @@ const Gallery = ({ direction, items, bg, height }) => {
       className={`{flex flex-${direction} w-screen bg-white h-max `}
     >
       {items.map((item) => (
-        <div className={`{w-full h-96 bg-black; m-1`}></div>
+        <div className={`{w-full h-full`}>{item}</div>
       ))}
     </section>
   );

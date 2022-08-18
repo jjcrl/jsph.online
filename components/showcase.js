@@ -1,26 +1,33 @@
 import { useContext, useEffect, useState } from "react";
 import { SmoothScrollContext } from "../src/contexts/SmoothScroll.context";
 
-const ShowCase = ({ works }) => {
+const ShowCase = ({ items }) => {
   const { scroll } = useContext(SmoothScrollContext);
-  const [currColor, setCurrColor] = useState();
-
+  const [currColor, setCurrColor] = useState([items].theme);
+  const [index, setIndex] = useState(0);
   useEffect(() => {
     if (scroll) {
       scroll.on("scroll", (obj) => {
         const elements = obj.currentElements;
-
         console.log(elements);
-
         if (elements) {
-          if (elements["rose-500"]) {
-            setCurrColor("rose-500");
+          if (elements["showcase-item-0"]) {
+            setCurrColor("whitesmoke");
+            setIndex(0);
           }
-          if (elements["yellow-400"] && elements["yellow-400"].progress > 0.2) {
-            setCurrColor("yellow-400");
+          if (
+            elements["showcase-item-1"] &&
+            elements["showcase-item-1"].progress > 0.2
+          ) {
+            setCurrColor("peachpuff");
+            setIndex(1);
           }
-          if (elements["green-700"] && elements["green-700"].progress > 0.2) {
-            setCurrColor("green-700	");
+          if (
+            elements["showcase-item-2"] &&
+            elements["showcase-item-2"].progress > 0.2
+          ) {
+            setCurrColor("road");
+            setIndex(2);
           }
         }
       });
@@ -36,41 +43,41 @@ const ShowCase = ({ works }) => {
         data-scroll-id="target"
       >
         <div
-          className={`w-2/4	 h-screen bg-${currColor}`}
+          className={`w-2/4	 h-screen bg-${items[index].theme}`}
           data-scroll
           data-scroll-sticky
           data-scroll-target="#target"
         >
-          <div className="flex flex-col h-screen p-40 justify-between">
-            <p>tags</p>
-            <p>title</p>
-            <p>words</p>
-            <p>link</p>
+          <div className="flex flex-col h-screen p-20 justify-end">
+            <ul>
+              {items.tags
+                ? items[index].tags.map((tag) => <li>{tag}</li>)
+                : null}
+            </ul>
+
+            <h6 className="text-white mix-blend-difference">
+              {items[index].title}
+            </h6>
+            <h5 className="text-pale mix-blend-difference">
+              {items[index].description}
+            </h5>
+            <h6 className="text-pale mix-blend-difference">
+              {items[index].link}
+            </h6>
           </div>
         </div>
 
-        <div className="w-2/4	 bg-white" data-scroll>
-          <div
-            className="h-screen bg-rose-500 m-0 p-0"
-            data-scroll
-            data-scroll-id="rose-500"
-          >
-            <p>1</p>
-          </div>
-          <div
-            className="h-screen  bg-yellow-400"
-            data-scroll
-            data-scroll-id="yellow-400"
-          >
-            <p>2</p>
-          </div>
-          <div
-            className="h-screen  bg-green-700"
-            data-scroll
-            data-scroll-id="green-700"
-          >
-            <p>3</p>
-          </div>
+        <div className="w-2/4	 bg-ink" data-scroll>
+          {items.map((item) => (
+            <div
+              data-scroll
+              data-scroll-id={item.id}
+              className={`h-screen flex flex-col mt-3`}
+              id={item.theme}
+            >
+              {item.image}
+            </div>
+          ))}
         </div>
       </section>
     </>
@@ -78,3 +85,4 @@ const ShowCase = ({ works }) => {
 };
 
 export default ShowCase;
+5;
