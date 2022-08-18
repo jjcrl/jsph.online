@@ -18,7 +18,7 @@ export const Navigation = () => {
         <Link href="/" passHref>
           <HomeButton />
         </Link>
-        <nav className="m-0 self-center">
+        <nav className={`m-0 self-center ${toggle ? "text-pale" : "text-ink"}`}>
           <button
             onClick={() => {
               toggleNav();
@@ -30,7 +30,7 @@ export const Navigation = () => {
       </header>
 
       <div
-        className="bg-black min-h-screen min-w-screen p-0 m-0 fixed z-40 flex flex-col text-white"
+        className="bg-ink min-h-screen min-w-screen p-0 m-0 fixed z-40 flex flex-col text-boyblue"
         id="toggle"
         onClick={() => {
           toggleNav();
@@ -78,13 +78,14 @@ export const Navigation = () => {
           padding-right: 0.3em;
           font-weight: 600;
           margin: auto;
+          line-height: 1.15em;
         }
 
         p:hover {
           text-decoration: underline solid 0.11em;
         }
 
-        .options-container p:last-child:hover {
+        p:last-child:hover {
           text-decoration: none;
         }
       `}</style>

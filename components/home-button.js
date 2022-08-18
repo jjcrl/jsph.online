@@ -24,7 +24,7 @@ export const HomeButton = React.forwardRef(({ onClick, href }, ref) => {
         }}
       >
         <textPath textLength="230" href="#textcircle-home">
-          <a href={href} onClick={onClick} ref={ref}>
+          <a href={href} onClick={onClick} ref={ref} className="fill-pale">
             JSPH.DEV
           </a>
         </textPath>

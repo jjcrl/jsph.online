@@ -12,8 +12,15 @@ module.exports = {
         yellowgreen: "#ffea00",
         ink: "#07020d",
         boyblue: "#2d6bfb",
+        pale: "#f4f0f2",
+        road: "#5e4d5d",
+        peachpuff: "#FFDAB9",
+        whitesmoke: "#cfcbd9",
       },
     },
   },
   plugins: [],
+  variants: {
+    textColor: ["odd", "even"],
+  },
 };

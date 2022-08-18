@@ -1,26 +1,24 @@
-const WordsSection = () => {
+const WordsSection = ({
+  section1,
+  section2,
+  section3,
+  section4,
+  background,
+  font1,
+  font2,
+}) => {
   return (
     <section
-      className="bg-ink w-screen h-max flex flex-row justify-between m-0 py-40 px-20 text-white"
+      className={`bg-${background} w-screen h-max flex flex-row justify-between  py-20 px-20`}
       data-scroll-section
     >
-      <h5 className="w-full">
-        Lorem ipsum dolor sit amet, consectetur adipiscing.Aliquam neque massa,
-        dictum non ex ullamcorper, imperdiet rutrum turpis.
-      </h5>
+      <h4 className={`w-1/2 pr-20 text-${font1} pr-40 my-5`}>{section1}</h4>
 
-      <div className="flex flex-col w-max">
-        <h6>
-          Vestibulum facilisis libero vitae imperdiet vehicula. Donec facilisis
-          congue orci ac elementum. Suspendisse rhoncus arcu metus, eget
-          faucibus nulla iaculis quis
-        </h6>
-        <h6>
-          Mauris tempus tristique eros, ac facilisis libero varius nec. Proin
-          tristique, leo eu gravida dapibus, sem est posuere tellus, quis
-          pulvinar diam lectus vel erat. Mauris tristique luctus nunc, in tempor
-          nisl.
-        </h6>
+      <div className={`flex flex-col w-1/2 pl-20 text-${font2}`}>
+        <h5>{section2}</h5>
+        <br />
+        <h6>{section3}</h6>
+        <h6>{section4} </h6>
       </div>
     </section>
   );

@@ -3,25 +3,25 @@ const Footer = () => {
     <>
       <footer
         data-scroll-section
-        className="bg-pinkflame	w-screen h-min flex flex-row justify-between p-7 m-0 pt-20"
+        className="bg-ink	w-screen h-min flex flex-row justify-between p-7 m-0 pt-20"
       >
-        <section>
-          <ul className="list-none p-0 m-0 leading-8">
+        <div>
+          <ul className="list-none p-0 m-0 text-pale">
             <li>Salford,GB</li>
             <li>53.4875° N</li>
             <li>2.2901° W</li>
           </ul>
-        </section>
-        <section>
+        </div>
+        <div>
           <p>sticker</p>
-        </section>
-        <section>
-          <ul className="list-none p-0 m-0 leading-8 text-right">
+        </div>
+        <div>
+          <ul className="list-none p-0 m-0 leading-8 text-right text-pale">
             <li>github</li>
             <li>linkedin</li>
             <li>hello@jsph.dev</li>
           </ul>
-        </section>
+        </div>
       </footer>
 
       <style jsx>{``}</style>
