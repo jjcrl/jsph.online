@@ -1,10 +1,14 @@
 import { useContext, useEffect, useState } from "react";
 import { SmoothScrollContext } from "../src/contexts/SmoothScroll.context";
+import NcNewsFront from "./ncnews-front";
 
 const ShowCase = ({ items }) => {
   const { scroll } = useContext(SmoothScrollContext);
   const [currColor, setCurrColor] = useState([items].theme);
   const [index, setIndex] = useState(0);
+
+  const ncnews = <NcNewsFront />;
+
   useEffect(() => {
     if (scroll) {
       scroll.on("scroll", (obj) => {
@@ -49,25 +53,25 @@ const ShowCase = ({ items }) => {
           data-scroll-target="#target"
         >
           <div className="flex flex-col h-screen p-20 justify-end">
-            <ul>
-              {items.tags
-                ? items[index].tags.map((tag) => <li>{tag}</li>)
-                : null}
-            </ul>
-
             <h6 className="text-white mix-blend-difference">
               {items[index].title}
             </h6>
             <h5 className="text-pale mix-blend-difference">
               {items[index].description}
             </h5>
-            <h6 className="text-pale mix-blend-difference">
+            <br />{" "}
+            <ul className="flex flex-row text-pale mix-blend-difference text-xs gap-3 italic m-0">
+              {items[index].tags
+                ? items[index].tags.map((tag) => <li>{tag}</li>)
+                : null}
+            </ul>
+            <h7 className="text-pale mix-blend-difference">
               {items[index].link}
-            </h6>
+            </h7>
           </div>
         </div>
 
-        <div className="w-2/4	 bg-ink" data-scroll>
+        <div className={`w-2/4	 bg-ink`} data-scroll>
           {items.map((item) => (
             <div
               data-scroll
@@ -75,6 +79,8 @@ const ShowCase = ({ items }) => {
               className={`h-screen flex flex-col mt-3`}
               id={item.theme}
             >
+              {/* <NcNewsFront /> */}
+              {/* {item.image === "ncnews" ? ncnews : null} */}
               {item.image}
             </div>
           ))}
