@@ -7,39 +7,18 @@ export default function Work() {
   return (
     <>
       <section data-scroll-section className="flex flex-col">
-        <div data-scroll>
-          <Link href={"/work/work1"}>
-            <div className="h-screen w-screen bg-white" id="works">
-              <div className="show">
-                <h3 className="p-20 absolute z-10">ncnews</h3>
-                <h4 className="p-20 italic absolute z-10">
-                  full stack web app development.
-                </h4>
-                <div className="fixed inset-0 w-screen h-screen z-0">
-                  <Image src={forecastface} />
-                </div>
-              </div>
+        <div className="h-screen w-screen" id="works">
+          <div className="inset-0 w-screen h-screen absolute z-0">
+            <Link href={"/work/work1"}>
+              <Image src={forecastface} />
+            </Link>
+          </div>
+          <div className="show h-full w-full">
+            <div className="flex flex-col gap-10 h-full w-full justify-end absolute z-10  text-transparent pb-20">
+              <h5 className="px-10">ncnews</h5>
+              <h6 className="px-10 italic">full stack web app development.</h6>
             </div>
-          </Link>{" "}
-          <Link href={"/work/work2"}>
-            <div
-              className="h-screen w-screen bg-white justify-between"
-              id="works"
-            >
-              <div className="show">
-                <h3 className="p-20">Title</h3>
-                <h4 className="p-20 italic">line</h4>
-              </div>
-            </div>
-          </Link>{" "}
-          <Link href={"/work/work3"}>
-            <div className="h-screen w-screen bg-white" id="works">
-              <div className="show">
-                <h3 className="p-20">Title</h3>
-                <h4 className="p-20 italic">line</h4>
-              </div>
-            </div>
-          </Link>
+          </div>
         </div>
       </section>
 
@@ -48,21 +27,13 @@ export default function Work() {
       <style jsx>
         {`
           .show {
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            flex-wrap: nowrap;
-            height: 100%;
-            width: 100%;
-            color: white;
-            align-items: start;
-            backgrounf-color: transparent;
-            z-index: 10;
+            transition: 0.5s;
+            opacity: 0.6;
           }
 
           #works:hover .show {
-            background-color: rgba(0, 0, 0, 0.1);
             color: white;
+            opacity: 1;
           }
         `}
       </style>
