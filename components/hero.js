@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section
       data-scroll-section
-      className="flex flex-col  bg-white w-screen h-screen p-0 m-0"
+      className="flex flex-col  bg-gray-50 w-screen h-screen p-0 m-0"
     >
       <h1 className="text-ink tracking-widest italic underline m-auto">
         jsph.dev

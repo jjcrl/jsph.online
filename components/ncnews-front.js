@@ -1,12 +1,21 @@
 const NcNewsFront = () => {
   return (
     <section data-scroll-section>
-      <div className="bg-white w-screen h-screen flex flex-row gap-5">
-        <div className="flex flex-col w-1/2 bg-neutral-100 h-1/2 m-auto rounded-xl">
-          <div className="bg-neutral-300 w-full h-6 mt-0 rounded-t-xl flex flex-row justify-start gap-2 pt-2 pl-3 pb-2">
-            <span className="bg-neutral-200 w-2.5 h-2.5 block rounded-2xl"></span>
-            <span className="bg-neutral-200 w-2.5 h-2.5 block rounded-2xl"></span>
-            <span className="bg-neutral-200 w-2.5 h-2.5 block rounded-2xl "></span>
+      <div className="bg-white w-screen h-screen flex flex-row justify-center	items-center	 gap-10 -ml-20">
+        <div className="bg-transparent w-1/3 h-20 absolute top-20 -ml-20 flex flex-row justify-between px-14 items-center">
+          <span className="text-5xl italic underline -rotate-0 text-cod font-bold ">
+            ¶osts
+          </span>
+          <span className="text-4xl font-black text-cod opacity-70">&</span>
+          <span className="text-5xl italic underline rotate-0 text-cod font-bold decoration-6">
+            p¤ints
+          </span>
+        </div>
+        <div className="flex flex-col w-1/2 bg-neutral-100 h-1/2 m-0 rounded-xl">
+          <div className="bg-neutral-800 w-full h-6 mt-0 rounded-t-xl flex flex-row justify-start gap-2 pt-2 pl-3 pb-2">
+            <span className="bg-neutral-400 w-2.5 h-2.5 block rounded-2xl"></span>
+            <span className="bg-neutral-500 w-2.5 h-2.5 block rounded-2xl"></span>
+            <span className="bg-neutral-600 w-2.5 h-2.5 block rounded-2xl "></span>
           </div>
           <div className="flex flex-row gap-5 w-11/12 h-96 my-3 px-5 mx-auto">
             <div className="flex flex-col bg-cod w-1/3 h-full rounded-xl">
@@ -220,44 +229,59 @@ const NcNewsFront = () => {
           </div>
         </div>
 
+        <div className="bg-transparent w-1/2 h-20 absolute bottom-24 left-20 justify-between px-5 items-center flex flex-row">
+          <button className="bg-white rounded-3xl py-1 px-6 text-lg tracking-superwide border-2 border-blurple italic font-semibold text-cod first-letter:text-blurple first-letter:font-bold first-letter:not-italic">
+            ✧ /coding
+          </button>
+
+          <button className="bg-white rounded-3xl py-1 px-6 text-lg tracking-superwide border-2 border-blurple italic font-semibold text-cod first-letter:text-blurple first-letter:font-bold first-letter:not-italic">
+            ✧ /football
+          </button>
+          <button className="bg-white rounded-3xl py-1 px-6 text-lg tracking-superwide border-2 border-blurple italic font-semibold text-cod first-letter:text-blurple first-letter:font-bold first-letter:not-italic">
+            ✧ /cooking
+          </button>
+        </div>
+
         <div
-          className=" flex flex-col bg-neutral-100 h-5/6 w-1/4 m-auto"
+          className=" flex flex-col bg-neutral-100 h-3/4 w-80 m-0"
           id="iphone-mockup"
         >
-          <div className="bg-black w-40 h-5 ml-20 rounded-b-3xl fixed"></div>
+          <div className="bg-neutral-900 w-40 h-5 ml-20 -mt-1 rounded-b-3xl fixed"></div>
           <div className="leading-none w-3/4 m-auto">
-            <div className="-ml-2 mb-3 -mr-1">
+            <div className="-ml-2 mb-3 -mr-2 opacity-80">
               <span className="text-xs leading-none">
                 Both CSS3 and HTML5 are mostly supported in all modern browsers,
                 so there is no disadvantage to using CSS3 and HTML5 today.
               </span>
             </div>
-            <div className="w-6/7 text-center m-auto mb-3">
-              <span className="text-sm leading-none font-bold italic">
+            <div className="w-60 text-center m-auto mb-2 relative right-3">
+              <span className="text-md leading-5 font-bold italic">
                 "The opposite is true,there are many painful, frustrating
                 disadvantages with forgoing HTML5 & CSS3."
               </span>
             </div>
-            <div className="-ml-2  -mr-1">
+            <div className="-ml-2  -mr-3">
               <span className="text-xs">
-                You may already some HTML5 and a touch of CSS3, perhaps you know
+                You may already know HTML5 and a some CSS3, perhaps you know
                 enough old-school HTML and CSS.
               </span>
             </div>
-            <div className="w-6/12 -mb-20 -ml-2  -mr-1">
+            <div className="w-24 -mb-28 -ml-2  -mr-1">
               <span className="text-xs leading-none">
                 With this, you might have thought not to learn HTML5 & CSS3.
               </span>
             </div>
           </div>
-          <div className="text-blurple tracking-tight text-6xl w-min ml-auto pr-8 -mb-3 mt-2">
-            <span className="font-bold italic">66</span>
-            <span className="text-watermelon font-bold relative bottom-2 tracking-tighter">
-              ++
+          <div className="text-blurple tracking-tight text-6xl w-36 ml-auto -mt-4 mr-5">
+            <span className="font-bold italic text-8xl opacity-90 relative top-7 right-5">
+              66
+            </span>
+            <span className="text-watermelon font-bold relative right-14 tracking-tighter opacity-90 text-7xl">
+              +-
             </span>
           </div>
 
-          <span className="ml-8 opacity-50 italic w-fit -mb-2 mt-2">
+          <span className="ml-8 opacity-50 italic w-fit -mb-3 mt-2">
             hide comments
           </span>
           <div>
@@ -286,7 +310,7 @@ const NcNewsFront = () => {
                 </span>
               </div>
             </div>
-            <div className="w-10/12 h-max bg-white m-auto mb-3 rounded-3xl">
+            {/* <div className="w-10/12 h-max bg-white m-auto mb-3 rounded-3xl">
               <div className="flex flex-row h-10 ">
                 <div className="bg-pinkflame rounded-full w-6 h-6 mt-3 ml-4"></div>
                 <span className="mt-3.5 text-sm ml-2 underline opacity-70">
@@ -305,15 +329,24 @@ const NcNewsFront = () => {
                   Thank you for sharing, cant wait for your next post.
                 </span>
               </div>
-            </div>
-            <div className=" opacity-100 w-44 bg-whitesmoke h-2  rounded-lg relative left-20 bottom-3.5"></div>
+            </div> */}
+
+            <div className=" opacity-90 w-40 bg-neutral-300 h-2  rounded-lg relative left-20 bottom-1.5"></div>
           </div>
+        </div>
+
+        <div className="bg-transparent w-28 h-auto absolute right-32 bottom-1/5 flex flex-col justify-between items-start gap-7 text-8xl font-bold tracking-tighter">
+          <span className="text-blurple text-8xl -rotate-3">✧</span>
+          <span className="text-watermelon">++</span>
+          <span className="text-blurple text-9xl font-black">¤</span>
+          <span className="text-watermelon text-7xl">▒</span>
+          <span className="text-blurple rotate-3">≡</span>
         </div>
       </div>
       <style jsx>{`
         #iphone-mockup {
-          border-radius: 4rem;
-          border: solid 1rem black;
+          border-radius: 3rem;
+          border: solid 0.7rem rgb(23 23 23);
         }
       `}</style>
     </section>

@@ -9,6 +9,7 @@ import TempHandSVG from "../../components/svg/temp-hand.svg";
 import DialFaceSVG from "../../components/svg/dial-face.svg";
 import ForecastFaceFonts from "../../components/forecastface-fonts";
 import ForecastFaceColours from "../../components/forecastface-colours";
+import Marquee from "../../components/marquee";
 
 export default function Work1() {
   return (
@@ -32,6 +33,7 @@ export default function Work1() {
               "Your day at a glace, display what your need to know for right now.",
             theme: "whitesmoke",
             id: "showcase-item-0",
+            backdrop: "black",
           },
           {
             image: <SunRingSVG />,
@@ -40,6 +42,7 @@ export default function Work1() {
               "Sun rise, the highest point of the sun , and sun set, disaplyed subtley, to keep track of where the sun is thoughout the day",
             theme: "peachpuff",
             id: "showcase-item-1",
+            backdrop: "black",
           },
           {
             image: <TempHandSVG />,
@@ -48,9 +51,21 @@ export default function Work1() {
               "As the hand moves around the dial with the time, it tracks the current temperature and siaply its about the hand.",
             theme: "road",
             id: "showcase-item-2",
+            backdrop: "black",
           },
         ]}
       />
+      <Marquee
+        bg="whitesmoke"
+        text="cod"
+        items={[
+          "Marquee Item 1",
+          "Marquee Item 2",
+          "Marquee Item 3",
+          "Marquee Item 4",
+          "Marquee Item 5",
+        ]}
+      />{" "}
       <Gallery
         direction="col"
         bg="black"
@@ -60,10 +75,10 @@ export default function Work1() {
       <WordsSection
         section1="This is  the last first section."
         section2="And this is still the second section that could be very long on its own."
-        section3="& maybe just one section thats a mini ?"
-        background={"ink"}
-        font1={"whitesmoke"}
-        font2={"road"}
+        section3="and maybe just one section thats a mini ?"
+        background={"cod"}
+        font1={"pale"}
+        font2={"pale"}
       />
       <Footer />
     </>

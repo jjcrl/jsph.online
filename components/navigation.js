@@ -30,41 +30,41 @@ export const Navigation = () => {
       </header>
 
       <div
-        className="bg-ink min-h-screen min-w-screen p-0 m-0 fixed z-40 flex flex-col text-boyblue"
+        className="bg-ink min-h-screen min-w-screen p-0 m-0  z-40 flex flex-col text-pale"
         id="toggle"
         onClick={() => {
           toggleNav();
         }}
       >
-        <div className="m-auto flex flex-row flex-wrap w-3/4">
-          <Link href={"/work"}>
-            <p
+        <div className="m-auto flex flex-row flex-wrap w-2/3 text-center text-9xl ">
+          <ul className="list-none p-0 m-0 flex flex-wrap text-center justify-center leading-tight">
+            <li
+              className="pr-5"
               onClick={() => {
                 toggleNav();
               }}
             >
-              Work,
-            </p>
-          </Link>
-          <Link href={"/about"}>
-            <p
+              <Link href={"/work"}>Work,</Link>
+            </li>
+            <li
               onClick={() => {
                 toggleNav();
               }}
             >
-              About,
-            </p>
-          </Link>
-          <Link href={"/contact"}>
-            <p
+              <Link href={"/about"}>About,</Link>
+            </li>
+            <li
+              className="pr-5"
               onClick={() => {
                 toggleNav();
               }}
             >
-              Contact,
-            </p>
-          </Link>
-          <p>Posts</p>
+              <Link href={"/contact"}>Contact,</Link>
+            </li>
+            <li>
+              <Link href={"/"}>Posts</Link>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -73,19 +73,11 @@ export const Navigation = () => {
           display: ${toggle === false ? `none` : null};
         }
 
-        p {
-          font-size: 9em;
-          padding-right: 0.3em;
-          font-weight: 600;
-          margin: auto;
-          line-height: 1.15em;
-        }
-
-        p:hover {
+        li:hover {
           text-decoration: underline solid 0.11em;
         }
 
-        p:last-child:hover {
+        li:last-child:hover {
           text-decoration: none;
         }
       `}</style>

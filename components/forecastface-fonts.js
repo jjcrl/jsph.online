@@ -1,7 +1,7 @@
 const ForecastFaceFonts = () => {
   return (
-    <div className="flex flex-row justify-center w-screen h-screen align-center  text-6xl m-0">
-      <div className="bg-ink text-road  w-1/2 grid grid-rows-5 grid-cols-5 p-5 even:text-peachpuff ">
+    <div className="flex flex-row justify-center w-screen h-screen align-center  text-6xl ">
+      <div className="bg-ink text-road  w-1/2 grid grid-rows-5 grid-cols-5 p-5">
         <p>00</p>
         <p>°</p>
         <p>01</p>
@@ -106,6 +106,14 @@ const ForecastFaceFonts = () => {
         <p>.</p>
         <p>Zz</p>
       </div>
+
+      <style jsx>
+        {`
+          p {
+            font-family: GT Maru Trial;
+          }
+        `}
+      </style>
     </div>
   );
 };

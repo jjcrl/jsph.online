@@ -9,16 +9,15 @@ const WordsSection = ({
 }) => {
   return (
     <section
-      className={`bg-${background} w-screen h-max flex flex-row justify-between  py-20 px-20`}
+      className={`bg-${background} w-screen h-max flex flex-row justify-between py-20 px-20`}
       data-scroll-section
     >
-      <h4 className={`w-1/2 pr-20 text-${font1} pr-40 my-5`}>{section1}</h4>
+      <h4 className={`w-1/2 pr-10 text-${font1}`}>{section1}</h4>
 
-      <div className={`flex flex-col w-1/2 pl-20 text-${font2}`}>
-        <h5>{section2}</h5>
-        <br />
-        <h6>{section3}</h6>
-        <h6>{section4} </h6>
+      <div className={`flex flex-col w-1/2 text-${font2} pt-5 opacity-80`}>
+        <h7 className="pb-5">{section2}</h7>
+        <h7 className="pb-5"> {section3}</h7>
+        <h7 className="pb-5">{section4} </h7>
       </div>
     </section>
   );

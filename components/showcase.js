@@ -1,37 +1,35 @@
 import { useContext, useEffect, useState } from "react";
 import { SmoothScrollContext } from "../src/contexts/SmoothScroll.context";
-import NcNewsFront from "./ncnews-front";
 
 const ShowCase = ({ items }) => {
   const { scroll } = useContext(SmoothScrollContext);
-  const [currColor, setCurrColor] = useState([items].theme);
   const [index, setIndex] = useState(0);
-
-  const ncnews = <NcNewsFront />;
 
   useEffect(() => {
     if (scroll) {
       scroll.on("scroll", (obj) => {
         const elements = obj.currentElements;
-        console.log(elements);
         if (elements) {
           if (elements["showcase-item-0"]) {
-            setCurrColor("whitesmoke");
             setIndex(0);
           }
           if (
             elements["showcase-item-1"] &&
             elements["showcase-item-1"].progress > 0.2
           ) {
-            setCurrColor("peachpuff");
             setIndex(1);
           }
           if (
             elements["showcase-item-2"] &&
             elements["showcase-item-2"].progress > 0.2
           ) {
-            setCurrColor("road");
             setIndex(2);
+          }
+          if (
+            elements["showcase-item-3"] &&
+            elements["showcase-item-3"].progress > 0.2
+          ) {
+            setIndex(3);
           }
         }
       });
@@ -62,7 +60,9 @@ const ShowCase = ({ items }) => {
             <br />{" "}
             <ul className="flex flex-row text-pale mix-blend-difference text-xs gap-3 italic m-0">
               {items[index].tags
-                ? items[index].tags.map((tag) => <li>{tag}</li>)
+                ? items[index].tags.map((tag, index) => (
+                    <li key={`tag-${index}`}>{tag}</li>
+                  ))
                 : null}
             </ul>
             <h7 className="text-pale mix-blend-difference">
@@ -71,16 +71,14 @@ const ShowCase = ({ items }) => {
           </div>
         </div>
 
-        <div className={`w-2/4	 bg-ink`} data-scroll>
+        <div className={`w-2/4 bg-${items[index].backdrop}`} data-scroll>
           {items.map((item) => (
             <div
               data-scroll
               data-scroll-id={item.id}
-              className={`h-screen flex flex-col mt-3`}
+              className={`h-screen flex flex-col mt-3 bg-${items[index].backdrop}`}
               id={item.theme}
             >
-              {/* <NcNewsFront /> */}
-              {/* {item.image === "ncnews" ? ncnews : null} */}
               {item.image}
             </div>
           ))}
