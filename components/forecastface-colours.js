@@ -3,14 +3,14 @@ import ColourPalette from "./colour-pallete";
 const ForecastFaceColours = () => {
   return (
     <>
-      <div className="flex flex-col w-screen h-screen">
+      <div className="flex flex-col w-screen h-auto p-10">
         <div className="flex flex-col gap-0  m-auto w-full h-full">
           <div className="flex flex-col">
             <ColourPalette
               colours={["#91345B", "#AB4358", "#E95B37", "#FCBF56"]}
               rows={1}
               columns={4}
-              width={300}
+              width={200}
             />
             <span className="gradient1" id="gradient" />
           </div>
@@ -18,7 +18,7 @@ const ForecastFaceColours = () => {
           <div className="flex flex-col">
             <ColourPalette
               colours={["#F3F3F3", "#CFCBD9", "#5E4D5D", "#050505"]}
-              width={300}
+              width={200}
               rows={1}
               columns={4}
             />
@@ -28,28 +28,6 @@ const ForecastFaceColours = () => {
       </div>
 
       <style jsx>{`
-        .design-container {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          width: 70vw;
-          border: solid 1px red;
-        }
-        .gradients-container {
-          display: flex;
-          flex-direction: column;
-          gap: 0;
-          margin-top: 3.5em;
-          margin: auto;
-        }
-        .design-container section {
-          display: flex;
-          flex-direction: column;
-        }
-        .column-section {
-          flex-direction: column !important;
-          align-items: center;
-        }
         .gradient1 {
           display: block;
           background: rgb(252, 191, 86);

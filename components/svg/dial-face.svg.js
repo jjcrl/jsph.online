@@ -44,7 +44,7 @@ const DialFaceSVG = () => {
             })}
           </text>
           <text
-            transform="translate(45 160)"
+            transform="translate(70 165)"
             fontSize="1.5em"
             fontFamily="GT Maru Trial"
             fill="#cfcbd9"
@@ -55,7 +55,7 @@ const DialFaceSVG = () => {
             })}
           </text>
           <text
-            transform="translate(65 190)"
+            transform="translate(50 195)"
             fontSize="1.25em"
             fontFamily="GT Maru Trial"
             fill="#cfcbd9"

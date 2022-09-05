@@ -1,10 +1,10 @@
 import { SmoothScrollProvider } from "../../src/contexts/SmoothScroll.context";
-import Work1 from "../../src/pages/Work1.page";
+import ForecastFace from "../../src/pages/ForecastFace.page";
 
-export default function AboutPage() {
+export default function page() {
   return (
     <SmoothScrollProvider options={{ smooth: true }}>
-      <Work1 />
+      <ForecastFace />
     </SmoothScrollProvider>
   );
 }

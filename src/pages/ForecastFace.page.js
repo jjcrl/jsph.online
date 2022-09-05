@@ -11,17 +11,17 @@ import ForecastFaceFonts from "../../components/forecastface-fonts";
 import ForecastFaceColours from "../../components/forecastface-colours";
 import Marquee from "../../components/marquee";
 
-export default function Work1() {
+export default function ForecastFace() {
   return (
     <>
       <Topper bg={forecastface} />
       <WordsSection
-        section1="Forecast Face"
-        section2="24hr weather forecast at a glance."
-        section3="A Stand alone webapp for daily weather data visulaisation."
-        section4="and this could be for the guthub or link?"
+        section1="Forecast Face, Data Visualisation."
+        section2="A Stand alone webapp for daily weather forecast, with temperature, sun and rain data."
+        section3="www.github.com/jjcrl.forecastface"
+        section4="www.forecastface.netlify.app"
         background="black"
-        font1="pale"
+        font1="whitesmoke"
         font2="whitesmoke"
       />
       <ShowCase
@@ -37,49 +37,56 @@ export default function Work1() {
           },
           {
             image: <SunRingSVG />,
-            title: "sun position tracking",
+            title: "Sun Position Tracking",
             description:
-              "Sun rise, the highest point of the sun , and sun set, disaplyed subtley, to keep track of where the sun is thoughout the day",
+              "Sun rise, highest point and sun set displayed centraly to provide sun data, at a glance.",
             theme: "peachpuff",
             id: "showcase-item-1",
             backdrop: "black",
           },
           {
             image: <TempHandSVG />,
-            title: "Current temperature, on the hour, every hour.",
+            title: "Current temperature On The Hour Every Hour.",
             description:
-              "As the hand moves around the dial with the time, it tracks the current temperature and siaply its about the hand.",
+              "As the hand moves around the clock face, it updates to the current temperature.",
             theme: "road",
             id: "showcase-item-2",
             backdrop: "black",
           },
         ]}
       />
-      <Marquee
-        bg="whitesmoke"
-        text="cod"
-        items={[
-          "Marquee Item 1",
-          "Marquee Item 2",
-          "Marquee Item 3",
-          "Marquee Item 4",
-          "Marquee Item 5",
-        ]}
-      />{" "}
+      <WordsSection
+        section1="Keeping things simple."
+        section2="I wanted this to be simple , visually appealing and to contain all the infomation you would want in a single glance."
+        section3={`"Data visuals is the language of decison making, good ones effectliy convey infomation, great ones enable, inform and improve decison making."`}
+        background={"grey-200"}
+        font1={"whitesmoke"}
+        font2={"cod"}
+      />
       <Gallery
         direction="col"
         bg="black"
         height="96"
         items={[<ForecastFaceFonts />, <ForecastFaceColours />]}
       />
-      <WordsSection
+      <Marquee
+        bg="whitesmoke"
+        text="pale"
+        items={[
+          "Source Code Available",
+          "github.com/jjcrl",
+          "Source Code Available",
+          "github.com/jjcrl",
+        ]}
+      />{" "}
+      {/* <WordsSection
         section1="This is  the last first section."
         section2="And this is still the second section that could be very long on its own."
         section3="and maybe just one section thats a mini ?"
         background={"cod"}
         font1={"pale"}
         font2={"pale"}
-      />
+      /> */}
       <Footer />
     </>
   );

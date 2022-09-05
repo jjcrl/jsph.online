@@ -39,7 +39,7 @@ const ShowCase = ({ items }) => {
   return (
     <>
       <section
-        className="w-screen flex flex-row relative justify-items-end"
+        className="w-screen flex flex-row relative justify-items-end "
         data-scroll-section
         id="target"
         data-scroll-id="target"
@@ -50,11 +50,11 @@ const ShowCase = ({ items }) => {
           data-scroll-sticky
           data-scroll-target="#target"
         >
-          <div className="flex flex-col h-screen p-20 justify-end">
+          <div className="flex flex-col h-screen p-20 pb-0 justify-end">
             <h6 className="text-white mix-blend-difference">
               {items[index].title}
             </h6>
-            <h5 className="text-pale mix-blend-difference">
+            <h5 className="text-white mix-blend-difference">
               {items[index].description}
             </h5>
             <br />{" "}

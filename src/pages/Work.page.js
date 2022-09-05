@@ -1,7 +1,6 @@
 import Footer from "../../components/footer";
 import forecastface from "../../public/images/forecastface.png";
 import ncnews from "../../public/images/ncnews.png";
-
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "../../components/marquee";
@@ -10,7 +9,7 @@ export default function Work() {
   return (
     <>
       <section data-scroll-section className="flex flex-col gap-7">
-        <Link href={"/work/work1"}>
+        <Link href={"/work/ForecastFace"}>
           <div className="h-screen w-screen" id="works">
             <div className="inset-0 w-screen h-screen absolute z-0">
               <Image src={forecastface} />
