@@ -4,7 +4,7 @@ const Marquee = ({ bg, text, items }) => {
       data-scroll-section
       className={`w-screen h-full bg-${bg} text-${text}`}
     >
-      <div className="relative flex overflow-x-hidden">
+      <div className="relative flex overflow-x-hidden overflow-y-hidden">
         <div className="py-5 animate-marquee whitespace-nowrap">
           {items.map((item) => (
             <span className="mx-10 text-6xl">{item}</span>

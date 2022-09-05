@@ -2,15 +2,6 @@ const NcNewsFront = () => {
   return (
     <section data-scroll-section>
       <div className="bg-white w-screen h-screen flex flex-row justify-center	items-center	 gap-10 -ml-20">
-        <div className="bg-transparent w-1/3 h-20 absolute top-20 -ml-20 flex flex-row justify-between px-14 items-center">
-          <span className="text-5xl italic underline -rotate-0 text-cod font-bold ">
-            ¶osts
-          </span>
-          <span className="text-4xl font-black text-cod opacity-70">&</span>
-          <span className="text-5xl italic underline rotate-0 text-cod font-bold decoration-6">
-            p¤ints
-          </span>
-        </div>
         <div className="flex flex-col w-1/2 bg-neutral-100 h-1/2 m-0 rounded-xl">
           <div className="bg-neutral-800 w-full h-6 mt-0 rounded-t-xl flex flex-row justify-start gap-2 pt-2 pl-3 pb-2">
             <span className="bg-neutral-400 w-2.5 h-2.5 block rounded-2xl"></span>
@@ -229,7 +220,7 @@ const NcNewsFront = () => {
           </div>
         </div>
 
-        <div className="bg-transparent w-1/2 h-20 absolute bottom-24 left-20 justify-between px-5 items-center flex flex-row">
+        {/* <div className="bg-transparent w-1/2 h-20 absolute bottom-24 left-20 justify-between px-5 items-center flex flex-row">
           <button className="bg-white rounded-3xl py-1 px-6 text-lg tracking-superwide border-2 border-blurple italic font-semibold text-cod first-letter:text-blurple first-letter:font-bold first-letter:not-italic">
             ✧ /coding
           </button>
@@ -240,7 +231,7 @@ const NcNewsFront = () => {
           <button className="bg-white rounded-3xl py-1 px-6 text-lg tracking-superwide border-2 border-blurple italic font-semibold text-cod first-letter:text-blurple first-letter:font-bold first-letter:not-italic">
             ✧ /cooking
           </button>
-        </div>
+        </div> */}
 
         <div
           className=" flex flex-col bg-neutral-100 h-3/4 w-80 m-0"
@@ -272,11 +263,11 @@ const NcNewsFront = () => {
               </span>
             </div>
           </div>
-          <div className="text-blurple tracking-tight text-6xl w-36 ml-auto -mt-4 mr-5">
-            <span className="font-bold italic text-8xl opacity-90 relative top-7 right-5">
+          <div className="text-blurple tracking-tight text-6xl w-36 ml-auto -mt-2 mr-4">
+            <span className="font-bold italic text-7xl opacity-90 relative top-5 ">
               66
             </span>
-            <span className="text-watermelon font-bold relative right-14 tracking-tighter opacity-90 text-7xl">
+            <span className="text-watermelon font-bold relative right-3 italic tracking-tighter opacity-90">
               +-
             </span>
           </div>
@@ -335,13 +326,13 @@ const NcNewsFront = () => {
           </div>
         </div>
 
-        <div className="bg-transparent w-28 h-auto absolute right-32 bottom-1/5 flex flex-col justify-between items-start gap-7 text-8xl font-bold tracking-tighter">
+        {/* <div className="bg-transparent w-28 h-auto absolute right-32 bottom-1/5 flex flex-col justify-between items-start gap-7 text-8xl font-bold tracking-tighter">
           <span className="text-blurple text-8xl -rotate-3">✧</span>
           <span className="text-watermelon">++</span>
           <span className="text-blurple text-9xl font-black">¤</span>
           <span className="text-watermelon text-7xl">▒</span>
           <span className="text-blurple rotate-3">≡</span>
-        </div>
+        </div> */}
       </div>
       <style jsx>{`
         #iphone-mockup {
