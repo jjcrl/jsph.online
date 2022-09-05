@@ -1,4 +1,40 @@
+import { React, useState, useEffect } from "react";
+
 const Footer = () => {
+  const first_text = "Say hello!";
+  const second_text = "test2";
+  const third_text = "test3";
+
+  const [text, setText] = useState("");
+
+  const textState = ["istyping", "isdeleting"];
+  const [typing, setTyping] = useState(textState[0]);
+
+  function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (typing === "istyping" && text !== first_text) {
+        setText(first_text.slice(0, text.length + 1));
+      } else if (text === first_text && typing === "istyping") {
+        sleep(2000).then(() => {
+          setTyping(textState[1]);
+        });
+      } else if (
+        (text === first_text && typing === "isdeleting") ||
+        typing === "isdeleting"
+      ) {
+        setText(first_text.slice(0, text.length - 1));
+        if (text.length <= 2) {
+          setTyping(textState[0]);
+        }
+      }
+    }, 100);
+    return () => clearTimeout(timeout);
+  }, [text, typing]);
+
   return (
     <>
       <footer
@@ -7,7 +43,9 @@ const Footer = () => {
       >
         <div className="flex flex-row justify-between">
           <div className="h-full flex flex-col">
-            <h4 className="m-5 text-pale w-2/4">typewritter goes here.</h4>
+            <h4 className="m-5 text-pale w-2/4" id="blinking-cursor">
+              {text}
+            </h4>
             <h3 className="underline text-blurple m-5 hover:italic w-min">
               hello@jsph.dev
             </h3>
