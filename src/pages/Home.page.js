@@ -3,6 +3,8 @@ import WordsSection from "../../components/words-section";
 import ShowCase from "../../components/showcase";
 import Footer from "../../components/footer";
 import Marquee from "../../components/marquee";
+import NcNewsShowcase from "../../components/ncnews.showcase";
+import ColorRing from "../../components/svg/color-ring";
 
 export default function Home() {
   return (
@@ -31,38 +33,40 @@ export default function Home() {
             title: "ncnews",
             description: "full stack, web development.",
             link: "www.jjcrl-nc-news.netlify.app",
-            image: "blurple",
+            image: <NcNewsShowcase />,
             theme: "blurple",
             id: "showcase-item-0",
+            backdrop: "gray-50",
           },
           {
             tags: ["data-visual", "victory-charts", "html", "api"],
             title: "forecastface",
             description: "Data visualisation",
             link: "www.google.com",
-            image: "road",
-            theme: "road",
+            image: <ColorRing />,
+            theme: "dayglow",
             id: "showcase-item-1",
+            backdrop: "dayglow",
           },
         ]}
       />
       <WordsSection
         section1="Like what you see? Want to know more?"
-        section2="hello there ☺️"
+        section2="hello there"
         section3="Have a look around to find out more, or contact me today emails always open."
         section4="Find out more →"
         background={"gray-50"}
-        font1={"ink"}
-        font2={"blurple"}
+        font1={"cod"}
+        font2={"ink"}
       />
-      <Marquee
+      {/* <Marquee
         bg="cod"
         text="blurple"
         items={[
           "☺️ Currently open to new opertunities ☺️",
           "~ Let's get creative ~",
         ]}
-      />
+      /> */}
       <Footer />
     </>
   );

@@ -7,18 +7,6 @@ const SunRingSVG = () => {
           viewBox=" 0 0 250 200"
           className="sun-svg"
         >
-          <defs>
-            <pattern
-              id="pattern1"
-              x="10"
-              y="10"
-              width="1"
-              height="1"
-              patternUnits="userSpaceOnUse"
-            >
-              <circle r={0.2} cx={0.5} cy={0.5} style={{ fill: "peachpuff" }} />
-            </pattern>
-          </defs>
           <path
             fill="url(#pattern1)"
             opacity="70%"

@@ -35,9 +35,13 @@ module.exports = {
         cod: "#181315",
         watermelon: "#fe4b72",
         mustard: "#D4C951",
+        dayglow: "#E95B37",
       },
       letterSpacing: {
         superwide: "0.35em",
+      },
+      fontSize: {
+        jumbo: "28rem",
       },
     },
   },
