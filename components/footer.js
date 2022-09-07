@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
         <div>
           <ul className="list-none m-0 p-0 flex flex-row justify-between px-10 mt-20 text-pale opacity-20">
-            <li>copyright 2022</li>
+            <li>© 2022</li>
             <li>Designed by Joseph Carroll</li>
             <li>jsph.dev</li>
           </ul>

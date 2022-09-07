@@ -1,6 +1,6 @@
 import Footer from "../../components/footer";
-import forecastface from "../../public/images/forecastface.png";
-import ncnews from "../../public/images/ncnews.png";
+import forecastface from "../../public/images/forecastface-image.png";
+import ncnews from "../../public/images/ncnews-image.png";
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "../../components/marquee";
@@ -22,9 +22,9 @@ export default function Work() {
             </div>
           </div>
         </Link>
-        <Link href={"/work/work2"}>
+        <Link href={"/work/NcNews"}>
           <div className="h-screen w-screen" id="works">
-            <div className="inset-0 w-screen h-screen absolute z-0">
+            <div className="inset-0 w-screen h-screen absolute z-0 bg-white block py-20">
               <Image src={ncnews} />
             </div>
             <div className="show">
