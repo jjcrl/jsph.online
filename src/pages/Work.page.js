@@ -3,7 +3,6 @@ import forecastface from "../../public/images/forecastface-image.png";
 import ncnews from "../../public/images/ncnews-image.png";
 import Image from "next/image";
 import Link from "next/link";
-import Marquee from "../../components/marquee";
 
 export default function Work() {
   return (
@@ -37,14 +36,7 @@ export default function Work() {
           </div>
         </div>
       </section>
-      <Marquee
-        bg="gray-50"
-        text="road"
-        items={[
-          "☺️ Currently open to new opertunities ☺️",
-          "~ Let's get creative ~",
-        ]}
-      />{" "}
+
       <Footer />
     </>
   );
