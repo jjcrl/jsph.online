@@ -8,35 +8,34 @@ import Marquee from "../../components/marquee";
 export default function Work() {
   return (
     <>
-      <section data-scroll-section className="flex flex-col gap-7">
-        <Link href={"/work/ForecastFace"}>
-          <div className="h-screen w-screen" id="works">
-            <div className="inset-0 w-screen h-screen absolute z-0">
-              <Image src={forecastface} />
-            </div>
-            <div className="show">
-              <div className="text-white relative flex flex-col h-screen w-screen gap-5 justify-end	items-start	pb-20">
-                <h5 className="px-10">forecast face</h5>
-                <h6 className="px-10 italic">weather data visualisation.</h6>
-              </div>
-            </div>
-          </div>
-        </Link>
-        <Link href={"/work/NcNews"}>
-          <div className="h-screen w-screen" id="works">
-            <div className="inset-0 w-screen h-screen absolute z-0 bg-white block py-20">
+      <section data-scroll-section className="flex flex-col h-fit w-screen">
+        <div className="block w-screen h-screen relative">
+          <Link href={"/work/NcNews"}>
+            <div className="inset-0 w-screen h-screen">
               <Image src={ncnews} />
             </div>
-            <div className="show">
-              <div className="text-black relative flex flex-col h-screen w-screen gap-5 justify-end items-start	pb-20">
-                <h5 className="px-10">ncnews</h5>
-                <h6 className="px-10 italic">
-                  full stack web app development.
-                </h6>
-              </div>
-            </div>
+          </Link>
+          <div className="text-white flex flex-col h-min w-screen gap-5 justify-end	items-start	pb-10 tracking-widest bg-none bottom-0 absolute">
+            <h5 className="px-10 mix-blend-difference">ncnews</h5>
+            <h6 className="px-10 italic opacity-70 mix-blend-difference">
+              full stack web app development.
+            </h6>
           </div>
-        </Link>
+        </div>
+        <div className="block w-screen h-screen relative">
+          <Link href={"/work/ForecastFace"}>
+            <div className="inset-0 w-screen h-screen">
+              <Image src={forecastface} />
+            </div>
+          </Link>
+
+          <div className="text-white flex flex-col h-min w-screen gap-5 justify-end	items-start	pb-10 tracking-widest bg-transparent bottom-0 absolute mix-blend-difference">
+            <h5 className="px-10">forecast face</h5>
+            <h6 className="px-10 italic opacity-70">
+              weather data visualisation.
+            </h6>
+          </div>
+        </div>
       </section>
       <Marquee
         bg="gray-50"
@@ -47,27 +46,6 @@ export default function Work() {
         ]}
       />{" "}
       <Footer />
-      <style jsx>
-        {`
-          #works {
-            transition: 5s;
-          }
-          .show {
-            width: 100%;
-            height: 100%;
-            transition: 5s;
-            opacity: 0;
-            padding-left: 1.5em;
-          }
-          #works:hover .show {
-            opacity: 1;
-          }
-
-          #works:hover {
-            opacity: 75%;
-          }
-        `}
-      </style>
     </>
   );
 }
