@@ -30,7 +30,7 @@ export const Navigation = () => {
       </header>
 
       <div
-        className="bg-cod min-h-screen min-w-screen p-0 m-0  z-40 flex flex-col"
+        className="bg-cod min-h-screen min-w-screen p-0 m-0  z-50 flex flex-col absolute inset-0"
         id="toggle"
         onClick={() => {
           toggleNav();
