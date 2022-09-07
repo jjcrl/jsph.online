@@ -1,4 +1,4 @@
-const GenerativeArtwork = () => {
+const GenerativeArtwork = ({ height, border }) => {
   let n = 0;
 
   const cells = [];
@@ -23,15 +23,15 @@ const GenerativeArtwork = () => {
 
       <style jsx>{`
         .grid {
-          width: 92%;
-          height: 60%;
-          border: solid 0.6em #181315;
+          width: 100%;
+          height: ${height}rem;
+          border: ${border === true ? `solid 0.7rem #181315` : `none`};
           border-radius: 2px;
           margin: auto;
           display: grid;
           grid-template-rows: repeat(9, 1fr);
           grid-template-columns: repeat(13, 1fr);
-          padding: 2em;
+          padding: ${border === true ? "3rem" : "1rem"};
           background-color: white;
         }
         .cell-1 {

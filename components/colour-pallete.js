@@ -6,8 +6,8 @@ const ColourPalette = ({ colours, width, rows, columns }) => {
           className={`w-${width} h-${width} bg-${colour} text-ink p-5`}
           id="colour"
           style={{
-            width: `25vw`,
-            height: `40vh`,
+            width: `${100 / columns}vw`,
+            height: `45vh`,
             backgroundColor: `${colour}`,
           }}
         >
