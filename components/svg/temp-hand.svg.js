@@ -69,22 +69,15 @@ const TempHandSVG = () => {
           .svg {
             width: 100%;
             height: auto;
-            margin: auto;
+            margin-top: auto;
           }
           .hand-svg {
-            background-color: #050505;
             background-color: black;
-            width: 95%;
-            height: auto;
-            margin: auto;
-            // border-radius: 30px;
-            border-top: 30px solid black;
           }
 
           line {
             stroke-linecap: round;
             stroke-linejoin: round;
-            opacity: 80%;
           }
         `}
       </style>

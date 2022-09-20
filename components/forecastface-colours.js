@@ -3,13 +3,11 @@ import ColourPalette from "./colour-pallete";
 const ForecastFaceColours = () => {
   return (
     <>
-      <div className="flex flex-col w-screen h-auto p-10">
+      <div className="flex flex-col w-screen h-auto p-10 bg-pale">
         <div className="flex flex-col gap-0  m-auto w-full h-full">
           <div className="flex flex-col">
             <ColourPalette
-              colours={["#91345B", "#AB4358", "#E95B37", "#FCBF56"]}
-              rows={1}
-              columns={4}
+              hexs={["#91345B", "#AB4358", "#E95B37", "#FCBF56"]}
               width={200}
             />
             <span className="gradient1" id="gradient" />
@@ -17,10 +15,8 @@ const ForecastFaceColours = () => {
 
           <div className="flex flex-col">
             <ColourPalette
-              colours={["#F3F3F3", "#CFCBD9", "#5E4D5D", "#050505"]}
+              hexs={["#F3F3F3", "#CFCBD9", "#5E4D5D", "#050505"]}
               width={200}
-              rows={1}
-              columns={4}
             />
             <span className="gradient2" id="gradient" />
           </div>

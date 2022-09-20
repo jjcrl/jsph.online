@@ -1,14 +1,12 @@
-const ColourPalette = ({ colours, width, rows, columns }) => {
+const ColourPalette = ({ hexs, width }) => {
   return (
-    <div className={`flex flex-row  w-full h-fit gap-0 m-auto`}>
-      {colours.map((colour) => (
+    <div className={`grid grid-rows-1 grid-cols-4  m-auto w-full h-full`}>
+      {hexs.map((hex, i) => (
         <span
-          className={`w-${width} h-${width} bg-${colour} text-ink p-5`}
+          className={`w-full h-72 m-auto`}
           id="colour"
           style={{
-            width: `${100 / columns}vw`,
-            height: `45vh`,
-            backgroundColor: `${colour}`,
+            backgroundColor: `${hexs[i]}`,
           }}
         >
           <label
@@ -19,7 +17,7 @@ const ColourPalette = ({ colours, width, rows, columns }) => {
               mixBlendMode: "difference",
             }}
           >
-            {colour}
+            {hex}
           </label>
         </span>
       ))}

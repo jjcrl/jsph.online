@@ -2,7 +2,7 @@ import GenerativeArtwork from "../components/generative-artwork";
 
 const NcNewsShowcase = () => {
   return (
-    <div className="bg-gray-50 h-full w-full overflow-hidden px-5 columns-3 text-white gap-5">
+    <div className="bg-gray-50 h-screen w-full overflow-hidden px-5 columns-3 text-white gap-5">
       <div className="w-52 h-fit bg-cod flex flex-col px-5 pt-5 py-4 rounded-xl mb-5">
         <GenerativeArtwork height={8} border={false} />
         <h7 className="pt-3  opacity-80">coding</h7>

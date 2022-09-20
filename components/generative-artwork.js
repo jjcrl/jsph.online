@@ -1,4 +1,16 @@
-const GenerativeArtwork = ({ height, border }) => {
+import { useEffect, useState } from "react";
+
+const GenerativeArtwork = ({ height, border, tick }) => {
+  const [toggle, setToggle] = useState(false);
+
+  // useEffect(() => {
+  //   if (tick) {
+  //     setInterval(() => {
+  //       setToggle(!toggle);
+  //     }, Math.random() * 1000);
+  //   }
+  // }, []);
+
   let n = 0;
 
   const cells = [];
@@ -25,14 +37,15 @@ const GenerativeArtwork = ({ height, border }) => {
         .grid {
           width: 100%;
           height: ${height}rem;
-          border: ${border === true ? `solid 0.7rem #181315` : `none`};
+          border: ${border === true ? `solid 1rem #181315` : `none`};
           border-radius: 2px;
           margin: auto;
           display: grid;
           grid-template-rows: repeat(9, 1fr);
           grid-template-columns: repeat(13, 1fr);
-          padding: ${border === true ? "3rem" : "1rem"};
+          padding: ${border === true ? "7%" : "6%"};
           background-color: white;
+          margin-bottom: ${tick ? "0.5%" : "none"};
         }
         .cell-1 {
           background-color: white;
