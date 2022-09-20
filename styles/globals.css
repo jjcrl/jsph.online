@@ -61,13 +61,12 @@ h7 {
   padding: 0;
   margin: auto;
 }
-
+/* 
 li {
   letter-spacing: 2px;
   font-weight: 600;
 } */
-
-u {
+*/ u {
   font-size: 1.25rem;
   font-weight: 700;
   text-decoration: none;
@@ -94,3 +93,8 @@ a {
     opacity: 0;
   }
 }
+
+/* li {
+  font-size: 2rem;
+  letter-spacing: 6px;
+} */
