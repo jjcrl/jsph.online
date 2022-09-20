@@ -45,7 +45,7 @@ const ShowCase = ({ items }) => {
         data-scroll-id="target"
       >
         <div
-          className={`w-2/4	 h-screen bg-${items[index].theme}`}
+          className={items[index].wordsclass}
           data-scroll
           data-scroll-sticky
           data-scroll-target="#target"
@@ -67,12 +67,12 @@ const ShowCase = ({ items }) => {
           </div>
         </div>
 
-        <div className={`w-2/4 bg-${items[index].backdrop}`} data-scroll>
+        <div className={items[index].imageclass} data-scroll>
           {items.map((item) => (
             <div
               data-scroll
               data-scroll-id={item.id}
-              className={`h-screen flex flex-col mt-3 bg-${items[index].backdrop}`}
+              className={`h-screen flex flex-col bg-black`}
               id={item.theme}
             >
               {item.image}
