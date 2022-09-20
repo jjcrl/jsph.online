@@ -1,5 +1,5 @@
 import { SmoothScrollProvider } from "../src/contexts/SmoothScroll.context";
-import Contact from "../src/pages/About.page";
+import Contact from "../src/pages/Contact.page";
 
 export default function AboutPage() {
   return (

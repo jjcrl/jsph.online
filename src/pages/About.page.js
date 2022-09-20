@@ -1,27 +1,27 @@
 import WordsSection from "../../components/words-section";
 import Footer from "../../components/footer";
-import Topper from "../../components/topper";
 
 export default function About() {
-  // const { scroll } = useContext(SmoothScrollContext);
-
-  // const goToSecondPart = (event) => {
-  //   event.preventDefault();
-  //   scroll && scroll.scrollTo("#second-part");
-  // };
-
-  // const goToTop = (event) => {
-  //   event.preventDefault();
-  //   scroll && scroll.scrollTo(0);
-  // };
-
   return (
     <>
       <section data-scroll-section>
-        <Topper />
-        <WordsSection />
-        <Footer />
+        <div
+          className="flex flex-col w-screen
+        bg-boyblue py-20"
+        >
+          <p className="py-20">about</p>
+        </div>
       </section>
+
+      <WordsSection
+        bg={"gray-50"}
+        section1={"section1"}
+        section2={"section2"}
+        section3={"section3"}
+        section4={"secrtion4"}
+      />
+
+      <Footer />
     </>
   );
 }
