@@ -1,9 +1,6 @@
-const Gallery = ({ direction, items, bg, height }) => {
+const Gallery = ({ items }) => {
   return (
-    <section
-      data-scroll-section
-      className={`{flex flex-${direction} w-screen bg-${bg} h-max `}
-    >
+    <section data-scroll-section className={`{flex w-screen h-max `}>
       {items.map((item) => (
         <div className={`{w-full h-full`}>{item}</div>
       ))}
