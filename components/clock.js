@@ -14,10 +14,10 @@ const Clock = () => {
     };
   });
   return (
-    <div className="flex flex-row w-2/3 m-auto justify-between font-bold mb-16">
-      <h5 className="text-pale m-auto">53.4875° N</h5>
-      <h5 className="text-pale m-auto">{time}</h5>
-      <h5 className="text-pale m-auto">2.2901° W</h5>
+    <div className="flex flex-col w-fit h-fit gap-2 font-bold text-right justify-between">
+      <h5 className="text-pale">53.4875° N</h5>
+      <h5 className="text-pale">{time}</h5>
+      <h5 className="text-pale underline">2.2901° W</h5>
     </div>
   );
 };
