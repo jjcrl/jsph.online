@@ -1,6 +1,6 @@
 import Footer from "../../components/footer";
 import forecastface from "../../public/images/forecastface-image.png";
-import ncnews from "../../public/images/ncnews-image.png";
+import ncnews from "../../public/images/ncnews-image2.png";
 import Image from "next/image";
 import Link from "next/link";
 
