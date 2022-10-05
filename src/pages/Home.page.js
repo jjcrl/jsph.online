@@ -2,9 +2,9 @@ import Hero from "../../components/hero";
 import WordsSection from "../../components/words-section";
 import ShowCase from "../../components/showcase";
 import Footer from "../../components/footer";
-import Marquee from "../../components/marquee";
 import NcNewsShowcase from "../../components/ncnews.showcase";
-import ColorRing from "../../components/svg/color-ring";
+import TempHandSVG from "../../components/svg/temp-hand.svg";
+
 
 export default function Home() {
   return (
@@ -41,12 +41,12 @@ export default function Home() {
             title: "forecastface",
             description: "Data visualisation",
             link: "www.google.com",
-            image: "black",
+            image: <TempHandSVG/>,
             theme: "dayglow",
             id: "showcase-item-1",
             backdrop: "dayglow",
-            wordsclass: "w-2/4 h-screen bg-black",
-            imageclass: "w-2/4 bg-black",
+            wordsclass: "w-2/4 h-screen bg-road",
+            imageclass: "w-2/4 bg-road",
           },
         ]}
       />
@@ -56,15 +56,6 @@ export default function Home() {
         section4="— Find out more"
         sectionclass="bg-neutral-50 w-screen h-max flex flex-row justify-between py-20 px-20 pb-28"
       />
-
-      {/* <Marquee
-        bg="cod"
-        text="blurple"
-        items={[
-          "☺️ Currently open to new opertunities ☺️",
-          "~ Let's get creative ~",
-        ]}
-      /> */}
       <Footer />
     </>
   );
