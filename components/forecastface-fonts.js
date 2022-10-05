@@ -1,6 +1,6 @@
 const ForecastFaceFonts = () => {
   return (
-    <div className="flex flex-row justify-center w-screen h-screen align-center  text-6xl p-10 bg-pale ">
+    <div className="flex flex-row justify-center w-screen h-screen align-center  text-6xl p-20 bg-white">
       <div className="bg-ink text-road  w-1/2 grid grid-rows-5 grid-cols-5 p-5">
         <p>00</p>
         <p>°</p>
