@@ -1,20 +1,20 @@
 import Image from "next/image";
 
-const Topper = ({ line, bg, image }) => {
+const Topper = ({ line, image }) => {
   return (
     <>
       <section data-scroll-section>
         <div className="flex h-screen w-screen">
-          <div className={`absolute z-0 bg-${bg} flex h-screen w-screen`}>
+          <div className={`absolute z-0 bg-white flex h-screen w-screen`}>
             <Image src={image} />
           </div>
 
           <div
-            className={`w-screen h-1/7 flex flex-col justify-end pb-10 pl-10 bg-${bg} text-white absolute bottom-0`}
+            className={`w-screen h-1/7 flex flex-col justify-end pb-5 pl-10 pt-5 bg-white text-white absolute bottom-0`}
           >
-            <h7 className="mix-blend-difference tracking-loose italic">
+            <h6 className="mix-blend-difference tracking-loose italic">
               {line}
-            </h7>
+            </h6>
           </div>
         </div>
       </section>
