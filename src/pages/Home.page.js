@@ -14,7 +14,7 @@ export default function Home() {
         section2="In the new year of 2022 I offically began my coding journey, and I havent stopped writting code since."
         section3="I like wokring with colour and meaning, problems to solve, imporvments to make."
         section4="— To simplify and amplify to define and design with clarity, charisma and craft."
-        sectionclass="bg-neutral-50 w-screen h-max flex flex-row justify-between py-16 px-20 pb-28"
+        sectionclass="bg-neutral-50 w-screen h-max flex flex-row justify-between py-16 px-20 pb-10"
       />
       <ShowCase
         items={[
