@@ -3,13 +3,18 @@ import { useEffect, useState } from "react";
 const GenerativeArtwork = ({ height, border, tick }) => {
   const [toggle, setToggle] = useState(false);
 
-  // useEffect(() => {
-  //   if (tick) {
-  //     setInterval(() => {
-  //       setToggle(!toggle);
-  //     }, Math.random() * 1000);
-  //   }
-  // }, []);
+  const changeArt = () => {
+    setToggle(!toggle);
+  };
+
+  useEffect(() => {
+    if (tick === true) {
+      const timerID = setInterval(() => changeArt(), 3000);
+      return function cleanup() {
+        clearInterval(timerID);
+      };
+    }
+  });
 
   let n = 0;
 
@@ -44,8 +49,6 @@ const GenerativeArtwork = ({ height, border, tick }) => {
           grid-template-rows: repeat(9, 1fr);
           grid-template-columns: repeat(13, 1fr);
           padding: ${border === true ? "7%" : "6%"};
-          background-color: white;
-          margin-bottom: ${tick ? "0.5%" : "none"};
         }
         .cell-1 {
           background-color: white;
