@@ -56,17 +56,7 @@ h7 {
   line-height: 1.45rem;
 }
 
-/* ul {
-  list-style: none;
-  padding: 0;
-  margin: auto;
-}
-/* 
-li {
-  letter-spacing: 2px;
-  font-weight: 600;
-} */
-*/ u {
+u {
   font-size: 1.25rem;
   font-weight: 700;
   text-decoration: none;
@@ -94,7 +84,6 @@ a {
   }
 }
 
-/* li {
-  font-size: 2rem;
-  letter-spacing: 6px;
-} */
+#system-ui {
+  font-family: system-ui;
+}
