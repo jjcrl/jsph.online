@@ -1,20 +1,18 @@
 import Clock from "./clock";
 import WelcomeSVG from "./svg/welcome.svg";
+
 const Hero = () => {
   return (
     <section
       data-scroll-section
       className="flex flex-col bg-neutral-50 w-screen h-screen p-0 m-0 "
     >
-      <h1 className="text-pale tracking-widest m-auto text-ink pt-32">
-        jsph.dev
-      </h1>
+      <h2 className="text-pale tracking-widest m-auto pt-48">jsph.online</h2>
 
-      <Clock />
-
-      <div className="absolute inset-0">
-        <WelcomeSVG />
+      <div className="absolute inset-0 mix-blend-difference">
+        {/* <WelcomeSVG /> */}
       </div>
+      <Clock />
     </section>
   );
 };

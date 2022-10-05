@@ -12,25 +12,27 @@ export const Navigation = () => {
   return (
     <>
       <header
-        className="flex flex-row w-screen fixed justify-between pr-5 z-50"
+        className="flex flex-row w-screen fixed justify-between px-5 py-5 z-40 pr-16"
         data-scroll-section
       >
         <Link href="/" passHref>
           <HomeButton />
         </Link>
-        <nav className={`m-0 self-center ${toggle ? "text-pale" : "text-ink"}`}>
+        <nav
+          className={`m-0 self-center ${toggle ? "text-white" : "text-cod"}`}
+        >
           <button
             onClick={() => {
               toggleNav();
             }}
           >
-            options
+            burger
           </button>
         </nav>
       </header>
 
       <div
-        className="bg-cod min-h-screen min-w-screen p-0 m-0  z-50 flex flex-col absolute inset-0"
+        className="bg-cod min-h-screen min-w-screen p-0 m-0  z-40 flex flex-col absolute inset-0"
         id="toggle"
         onClick={() => {
           toggleNav();
