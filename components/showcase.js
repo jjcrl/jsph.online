@@ -51,16 +51,18 @@ const ShowCase = ({ items }) => {
           data-scroll-target="#target"
         >
           <div className="flex flex-col h-screen p-20 pb-5 justify-end ">
-            <h6 className="text-white mix-blend-difference">
-              {items[index].title}
-            </h6>
             <h5 className="text-white mix-blend-difference">
-              {items[index].description}
+              {items[index].title}
             </h5>
+            <h4 className="text-white mix-blend-difference">
+              {items[index].description}
+            </h4>
             <ul className="flex flex-row text-pale mix-blend-difference text-xs gap-3 italic my-5">
               {items[index].tags
                 ? items[index].tags.map((tag, index) => (
-                    <li key={`tag-${index}`}>{tag}</li>
+                    <li key={`tag-${index}`} className="text-xl">
+                      {tag}
+                    </li>
                   ))
                 : null}
             </ul>

@@ -5,7 +5,6 @@ import Footer from "../../components/footer";
 import NcNewsShowcase from "../../components/ncnews.showcase";
 import TempHandSVG from "../../components/svg/temp-hand.svg";
 
-
 export default function Home() {
   return (
     <>
@@ -41,8 +40,7 @@ export default function Home() {
             title: "forecastface",
             description: "Data visualisation",
             link: "www.google.com",
-            image: <TempHandSVG/>,
-            theme: "dayglow",
+            image: <TempHandSVG />,
             id: "showcase-item-1",
             backdrop: "dayglow",
             wordsclass: "w-2/4 h-screen bg-road",

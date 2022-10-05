@@ -69,6 +69,7 @@ const TempHandSVG = () => {
           .svg {
             width: 100%;
             height: auto;
+            margin-top: auto;
           }
 
           line {
