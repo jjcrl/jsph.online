@@ -42,6 +42,7 @@ module.exports = {
       },
       fontSize: {
         jumbo: "28rem",
+        big: "20rem",
       },
       borderRadius: {
         thick: "5rem",
