@@ -1,8 +1,8 @@
 const NcNewsEngagement = () => {
   return (
     <div className="w-screen h-screen flex p-10 bg-white">
-      <div className="w-1/2 h-full px-16 py-5" id="system-ui">
-        <div className="w-full h-full bg-cod grid grid-cols-7 grid-rows-8 text-center items-center text-4xl text-blurple px-4">
+      <div className="w-1/2 h-full px-12 py-5 flex" id="system-ui">
+        <div className="w-full h-full bg-cod grid grid-cols-7 grid-rows-8 text-center items-center text-4xl text-blurple px-4  rounded-xl m-auto">
           <span>≡</span>
           <span>++</span>
           <span>≡</span>
