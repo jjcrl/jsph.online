@@ -79,14 +79,13 @@ const SunRingSVG = () => {
       <style jsx>
         {`
           .svg {
-            height: 100vh;
+            height: auto;
             width: 100%;
             margin-bottom: auto;
           }
           .sun-svg {
-            background-color: black;
             width: 100%;
-            height: 100%;
+            height: auto;
           }
         `}
       </style>

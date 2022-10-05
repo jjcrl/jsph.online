@@ -79,14 +79,9 @@ const DialFaceSVG = () => {
           margin: auto;
         }
         .info-svg {
-          // background-color: #050505;
-          // background-color: black;
           width: 95%;
           height: auto;
           margin: auto;
-          // border-radius: 30px;
-          // border-top: 10px solid black;
-          // border-bottom: 10px solid black;
         }
       `}</style>
     </>
