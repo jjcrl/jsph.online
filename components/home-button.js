@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 export const HomeButton = React.forwardRef(({ onClick, href }, ref) => {
   return (
@@ -20,12 +20,12 @@ export const HomeButton = React.forwardRef(({ onClick, href }, ref) => {
         dx={3}
         style={{
           fontFamily: "GT Maru Trial",
-          fontSize: "1.4rem",
+          fontSize: "1.2rem",
         }}
       >
-        <textPath textLength="230" href="#textcircle-home">
-          <a href={href} onClick={onClick} ref={ref} className="fill-pale">
-            JSPH.DEV
+        <textPath textLength="240" href="#textcircle-home">
+          <a href={href} onClick={onClick} ref={ref} className="fill-white">
+            JSPH.ONLINE
           </a>
         </textPath>
       </text>
