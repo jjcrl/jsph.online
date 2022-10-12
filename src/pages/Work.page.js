@@ -1,5 +1,5 @@
 import Footer from "../../components/footer";
-import forecastface from "../../public/images/forecast-face-image.png";
+import forecastface from "../../public/images/forecastface-image2.png";
 import ncnews from "../../public/images/ncnews-image2.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,35 +9,55 @@ export default function Work() {
     <>
       <section data-scroll-section className="flex flex-col h-fit w-screen">
         <div className="block w-screen h-screen relative">
+          <div className="inset-0 w-screen h-screen">
+            <Image src={ncnews} />
+          </div>
           <Link href={"/work/NcNews"}>
-            <div className="inset-0 w-screen h-screen">
-              <Image src={ncnews} />
+            <div
+              className="text-white flex flex-col h-screen w-screen justify-end items-start py-5 bottom-0 absolute"
+              id="works1"
+            >
+              <h4 className="px-10 pb-5">Northcoders News</h4>
             </div>
           </Link>
-          <div className="text-white flex flex-col h-min w-screen gap-5 justify-end	items-start	pb-10 tracking-widest bg-none bottom-0 absolute">
-            <h5 className="px-10 mix-blend-difference">ncnews</h5>
-            <h6 className="px-10 italic opacity-70 mix-blend-difference">
-              full stack web app development.
-            </h6>
-          </div>
         </div>
         <div className="block w-screen h-screen relative">
+          <div className="inset-0 w-screen h-screen">
+            <Image src={forecastface} />
+          </div>
+
           <Link href={"/work/ForecastFace"}>
-            <div className="inset-0 w-screen h-screen">
-              <Image src={forecastface} />
+            <div
+              className="text-white flex flex-col h-screen w-screen justify-end items-start py-5 bottom-0 absolute"
+              id="works2"
+            >
+              <h4 className="px-10 pb-5">Forecast Face</h4>
             </div>
           </Link>
-
-          <div className="text-white flex flex-col h-min w-screen gap-5 justify-end	items-start	pb-10 tracking-widest bg-transparent bottom-0 absolute mix-blend-difference">
-            <h5 className="px-10">forecast face</h5>
-            <h6 className="px-10 italic opacity-70">
-              weather data visualisation.
-            </h6>
-          </div>
         </div>
       </section>
 
-      <Footer />
+      <style jsx>{`
+        #works1 {
+          opacity: 0;
+          transition: opacity 2s linear 1ms;
+        }
+
+        #works1:hover {
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.5);
+        }
+
+        #works2 {
+          opacity: 0;
+          transition: opacity 2s linear 1ms;
+        }
+
+        #works2:hover {
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.5);
+        }
+      `}</style>
     </>
   );
 }
