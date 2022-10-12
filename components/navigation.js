@@ -130,7 +130,7 @@ export const Navigation = () => {
         #nav-icon4 span {
           display: block;
           position: absolute;
-          height: 8px;
+          height: 7px;
           width: 100%;
           background: ${burger === "open" ? "whitesmoke" : "black"};
           border-radius: 9px;
@@ -147,6 +147,7 @@ export const Navigation = () => {
           position: relative;
           transform: rotate(0deg);
           transition: 0.5s ease-in-out;
+          margin-top: 10px;
         }
 
         #nav-icon4 span:nth-child(1) {
@@ -155,12 +156,12 @@ export const Navigation = () => {
         }
 
         #nav-icon4 span:nth-child(2) {
-          top: 18px;
+          top: 14px;
           transform-origin: left center;
         }
 
         #nav-icon4 span:nth-child(3) {
-          top: 36px;
+          top: 30px;
           transform-origin: left center;
         }
 
