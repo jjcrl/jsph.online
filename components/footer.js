@@ -38,9 +38,9 @@ const Footer = () => {
 
   return (
     <>
-      <footer data-scroll-section className="bg-cod	w-screen h-min">
+      <footer data-scroll-section className="w-screen h-min">
         <div className="flex flex-row w-full justify-between">
-          <div className="h-full flex flex-col gap-3 px-10 pt-10 text-white">
+          <div className="h-full flex flex-col gap-3 px-10 pt-10 text-boyblue">
             <h4 id="blinking-cursor">{text}</h4>
             <h4 className="underline">hello@jsph.online</h4>
           </div>
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-row justify-between w-screen px-10 text-neutral-800 ">
+        <div className="flex flex-row justify-between w-screen px-10 text-neutral-500 ">
           <u>©2022</u>
           <u>jsph.online</u>
           <u>Joseph Carroll</u>
