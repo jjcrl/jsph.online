@@ -62,6 +62,9 @@ module.exports = {
     "py-16",
     "px-20",
     "pb-28",
+    "bg-indigo-100",
+    "py-20",
+    "px-32",
   ],
   plugins: [],
   variants: {
