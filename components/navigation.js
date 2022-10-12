@@ -4,9 +4,11 @@ import { useState } from "react";
 
 export const Navigation = () => {
   const [toggle, setToggle] = useState(false);
+  const [burger, setBurger] = useState(false);
 
   function toggleNav() {
     setToggle(!toggle);
+    burger === "open" ? setBurger("") : setBurger("open");
   }
 
   return (
@@ -21,18 +23,22 @@ export const Navigation = () => {
         <nav
           className={`m-0 self-center ${toggle ? "text-white" : "text-cod"}`}
         >
-          <button
+          <div
+            id="nav-icon4"
             onClick={() => {
               toggleNav();
             }}
+            className={burger}
           >
-            burger
-          </button>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </nav>
       </header>
 
       <div
-        className="bg-cod min-h-screen min-w-screen p-0 m-0  z-40 flex flex-col absolute inset-0"
+        className="bg-cod min-h-screen min-w-screen p-0 m-0  z-20 flex flex-col absolute inset-0"
         id="toggle"
         onClick={() => {
           toggleNav();
@@ -119,6 +125,60 @@ export const Navigation = () => {
           left: 18vw;
           top: 25vh;
           transform: rotate(-10deg);
+        }
+
+        #nav-icon4 span {
+          display: block;
+          position: absolute;
+          height: 8px;
+          width: 100%;
+          background: ${burger === "open" ? "whitesmoke" : "black"};
+          border-radius: 9px;
+          opacity: 1;
+          left: 0;
+          transform: rotate(0deg);
+          transition: 0.25s ease-in-out;
+          opacity: 95%;
+        }
+
+        #nav-icon4 {
+          width: 59px;
+          height: 45px;
+          position: relative;
+          transform: rotate(0deg);
+          transition: 0.5s ease-in-out;
+        }
+
+        #nav-icon4 span:nth-child(1) {
+          top: 0px;
+          transform-origin: left center;
+        }
+
+        #nav-icon4 span:nth-child(2) {
+          top: 18px;
+          transform-origin: left center;
+        }
+
+        #nav-icon4 span:nth-child(3) {
+          top: 36px;
+          transform-origin: left center;
+        }
+
+        #nav-icon4.open span:nth-child(1) {
+          transform: rotate(45deg);
+          top: -3px;
+          left: 8px;
+        }
+
+        #nav-icon4.open span:nth-child(2) {
+          width: 0%;
+          opacity: 0;
+        }
+
+        #nav-icon4.open span:nth-child(3) {
+          transform: rotate(-45deg);
+          top: 39px;
+          left: 8px;
         }
       `}</style>
     </>
