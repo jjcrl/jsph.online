@@ -8,7 +8,7 @@ const DialFaceSVG = () => {
           className="info-svg"
         >
           <text
-            transform="translate(71 30)"
+            transform="translate(65 25)"
             fontSize="1.5em"
             fontFamily="GT Maru Trial"
             fill="#cfcbd9"
@@ -17,7 +17,7 @@ const DialFaceSVG = () => {
             H:18 L:11
           </text>
           <text
-            transform="translate(20 58)"
+            transform="translate(20 56)"
             fontSize="1em"
             fontFamily="GT Maru Trial"
             fontStyle="italic"
@@ -44,7 +44,7 @@ const DialFaceSVG = () => {
             })}
           </text>
           <text
-            transform="translate(70 165)"
+            transform="translate(45 165)"
             fontSize="1.5em"
             fontFamily="GT Maru Trial"
             fill="#cfcbd9"
@@ -55,7 +55,7 @@ const DialFaceSVG = () => {
             })}
           </text>
           <text
-            transform="translate(50 195)"
+            transform="translate(58 198)"
             fontSize="1.25em"
             fontFamily="GT Maru Trial"
             fill="#cfcbd9"
