@@ -14,7 +14,7 @@ export default function Home() {
         section2="In the new year of 2022 I offically began my coding journey, and I havent stopped writting code since."
         section3="I like wokring with colour and meaning, problems to solve, imporvments to make."
         section4="— To simplify and amplify to define and design with clarity, charisma and craft."
-        sectionclass="bg-neutral-50 w-screen h-max flex flex-row justify-between py-16 px-20 pb-10"
+        sectionclass="bg-neutral-50 w-screen h-max flex flex-row justify-between py-16 px-20 pb-20"
       />
       <ShowCase
         items={[
@@ -27,32 +27,80 @@ export default function Home() {
               "axios",
               "unit-testing",
             ],
-            title: "ncnews",
-            description: "full stack, web development.",
+            title: "nc_news",
+            description: "Full Stack web development.",
             link: "www.jjcrl-nc-news.netlify.app",
             image: <NcNewsShowcase />,
             id: "showcase-item-0",
             wordsclass: "w-1/2 h-screen bg-blurple",
-            imageclass: "w-1/2 bg-blurple",
+            imageclass: "w-1/2 bg-ink",
           },
           {
             tags: ["web-app", "react.js", "data-visualisation", "api"],
-            title: "forecast face",
-            description: "weather data visualisation",
+            title: "forecast_face",
+            description: "Weather data visualisation",
             link: "www.forecast-face.netlify.app",
             image: <TempHandSVG />,
             id: "showcase-item-1",
             wordsclass: "w-1/2 h-screen bg-road",
-            imageclass: "w-1/2 bg-road",
+            imageclass: "w-1/2 h-full bg-ink",
+          },
+          {
+            tags: ["web-app", "react.js", "tailwindcss"],
+            title: "task_it",
+            description: "Task managment web app.",
+            link: "www.jjcrl-task-managment.netlify.app",
+            image: <TempHandSVG />,
+            id: "showcase-item-2",
+            wordsclass: "w-1/2 h-screen bg-indigo-100",
+            imageclass: "w-1/2 h-full bg-black",
           },
         ]}
       />
+
       <WordsSection
-        section1="Like what you see? Want to know more?"
-        section3="Have a look around to find out more, or contact me today emails always open."
-        section4="— Find out more"
-        sectionclass="bg-neutral-50 w-screen h-max flex flex-row justify-between py-20 px-20 pb-28"
+        section1=""
+        section2="section2"
+        section3="section3"
+        section4="section4"
+        sectionclass="bg-white w-screen flex flex-row justify-between py-20 px-20"
       />
+
+      <section
+        data-scroll-section
+        className="flex gap-10 justify-between py-20 px-32 bg-white"
+      >
+        <div className="flex flex-row gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="50"
+            height="50"
+            viewBox="0 0 30 30"
+            className="m-auto"
+          >
+            <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
+          </svg>
+          <h5>www.linkedin.com/in/jjcrl</h5>
+        </div>
+        <div className="flex flex-row gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            className="m-auto"
+          >
+            {" "}
+            <path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6C7,7.2,7,6.6,7.3,6 c0,0,1.4,0,2.8,1.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3C15.3,6,16.8,6,16.8,6C17,6.6,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4 c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3 C22,6.1,16.9,1.4,10.9,2.1z"></path>
+          </svg>
+          <h5>www.github.com/jjcrl</h5>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
