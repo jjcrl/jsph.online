@@ -3,7 +3,7 @@ import ColourPalette from "./colour-pallete";
 const ForecastFaceColours = () => {
   return (
     <>
-      <div className="flex flex-col w-screen h-auto p-20 bg-white">
+      <div className="flex flex-col w-screen h-auto p-10 bg-white">
         <div className="flex flex-col gap-0  m-auto w-full h-full">
           <div className="flex flex-col">
             <ColourPalette
