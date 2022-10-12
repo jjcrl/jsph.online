@@ -13,7 +13,7 @@ export default function Work2() {
     <>
       <Topper
         image={ncnews}
-        line="n c _ n e w s _"
+        line="Northcoders News"
         showcase={<NcNewsShowcase />}
       />
       <WordsSection

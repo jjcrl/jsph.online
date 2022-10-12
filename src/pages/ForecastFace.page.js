@@ -10,7 +10,7 @@ import forecastface from "../../public/images/forecastface-image2.png";
 export default function ForecastFace() {
   return (
     <>
-      <Topper line="f o r e c a s t _ f a c e _" image={forecastface} />
+      <Topper line="Forecast Face" image={forecastface} />
       <WordsSection
         section1="Weather Data Visualisation."
         section2="A Stand alone webapp for daily weather forecast, with temperature, sun and rain data. Designed after a clock face to prove 24 hour weather forecast at a glance."
