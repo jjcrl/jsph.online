@@ -1,4 +1,3 @@
-import Footer from "../../components/footer";
 import forecastface from "../../public/images/forecastface-image2.png";
 import ncnews from "../../public/images/ncnews-image2.png";
 import Image from "next/image";
