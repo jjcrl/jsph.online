@@ -4,7 +4,7 @@ const Clock = () => {
   const [time, setTime] = useState();
 
   const updateClock = () => {
-    setTime(new Date().toLocaleTimeString());
+    setTime(new Date().toLocaleTimeString().slice(0, 5));
   };
 
   useEffect(() => {
@@ -15,9 +15,9 @@ const Clock = () => {
   });
   return (
     <div className="flex flex-col w-fit h-fit gap-2 font-bold text-right justify-between">
-      <h5 className="text-pale">53.4875° N</h5>
-      <h5 className="text-pale">{time}</h5>
-      <h5 className="text-pale underline">2.2901° W</h5>
+      <h5 className="text-pale">53.4875°N</h5>
+      <h5 className="text-pale">02.2901°W</h5>
+      <h5 className="text-pale leading-none">{time}GMT</h5>
     </div>
   );
 };
