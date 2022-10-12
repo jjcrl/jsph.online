@@ -2,15 +2,15 @@ import Footer from "../../components/footer";
 import Topper from "../../components/topper";
 import WordsSection from "../../components/words-section";
 import Gallery from "../../components/gallery";
-
 import ForecastFaceFonts from "../../components/forecastface-fonts";
 import ForecastFaceColours from "../../components/forecastface-colours";
 import ForecastFaceItems from "../../components/ForecastFaceSVGItems";
+import forecastface from "../../public/images/forecastface-image2.png";
 
 export default function ForecastFace() {
   return (
     <>
-      <Topper line="f o r e c a s t _ f a c e _" />
+      <Topper line="f o r e c a s t _ f a c e _" image={forecastface} />
       <WordsSection
         section1="Weather Data Visualisation."
         section2="A Stand alone webapp for daily weather forecast, with temperature, sun and rain data. Designed after a clock face to prove 24 hour weather forecast at a glance."

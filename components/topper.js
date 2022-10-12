@@ -5,7 +5,7 @@ const Topper = ({ line, image }) => {
     <>
       <section data-scroll-section>
         <div className="flex h-screen w-screen">
-          <div className={`absolute z-0 bg-white flex h-screen w-screen`}>
+          <div className={`absolute z-0 bg-transparent flex h-screen w-screen`}>
             <Image src={image} />
           </div>
 
