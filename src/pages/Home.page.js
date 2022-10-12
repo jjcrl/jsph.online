@@ -4,6 +4,7 @@ import ShowCase from "../../components/showcase";
 import Footer from "../../components/footer";
 import NcNewsShowcase from "../../components/ncnews.showcase";
 import TempHandSVG from "../../components/svg/temp-hand.svg";
+import TaskitFront from "../../components/TaskItFront";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
               "axios",
               "unit-testing",
             ],
-            title: "nc_news",
+            title: "Northcoders News",
             description: "Full Stack web development.",
             link: "www.jjcrl-nc-news.netlify.app",
             image: <NcNewsShowcase />,
@@ -37,7 +38,7 @@ export default function Home() {
           },
           {
             tags: ["web-app", "react.js", "data-visualisation", "api"],
-            title: "forecast_face",
+            title: "Forecast Face",
             description: "Weather data visualisation",
             link: "www.forecast-face.netlify.app",
             image: <TempHandSVG />,
@@ -47,10 +48,10 @@ export default function Home() {
           },
           {
             tags: ["web-app", "react.js", "tailwindcss"],
-            title: "task_it",
+            title: "Task It",
             description: "Task managment web app.",
             link: "www.jjcrl-task-managment.netlify.app",
-            image: <TempHandSVG />,
+            image: <TaskitFront />,
             id: "showcase-item-2",
             wordsclass: "w-1/2 h-screen bg-indigo-100",
             imageclass: "w-1/2 h-full bg-black",
