@@ -13,13 +13,7 @@ const Clock = () => {
       clearInterval(timerID);
     };
   });
-  return (
-    <div className="flex flex-col w-fit h-fit gap-2 font-bold text-right justify-between">
-      <h5 className="text-neutral-300">53.4875°N</h5>
-      <h5 className="text-neutral-400">02.2901°W</h5>
-      <h5 className="text-neutral-500 leading-none">{time}GMT</h5>
-    </div>
-  );
+  return <h6>{time}.GMT</h6>;
 };
 
 export default Clock;
