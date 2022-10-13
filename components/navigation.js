@@ -142,12 +142,11 @@ export const Navigation = () => {
         }
 
         #nav-icon4 {
-          width: 59px;
+          width: 45px;
           height: 45px;
           position: relative;
           transform: rotate(0deg);
           transition: 0.5s ease-in-out;
-          margin-top: 10px;
         }
 
         #nav-icon4 span:nth-child(1) {
@@ -167,7 +166,7 @@ export const Navigation = () => {
 
         #nav-icon4.open span:nth-child(1) {
           transform: rotate(45deg);
-          top: -3px;
+          top: 6.5px;
           left: 8px;
         }
 
@@ -180,6 +179,7 @@ export const Navigation = () => {
           transform: rotate(-45deg);
           top: 39px;
           left: 8px;
+          width: 101%;
         }
       `}</style>
     </>
