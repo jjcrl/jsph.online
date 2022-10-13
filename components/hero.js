@@ -2,9 +2,9 @@ const Hero = () => {
   return (
     <section
       data-scroll-section
-      className="flex flex-col bg-neutral-50 w-screen h-screen p-0 m-0"
+      className="flex flex-col bg-neutral-50 w-screen h-screen p-0 m-0 bg-stone-100"
     >
-      <pre className="leading-normal m-auto text-imnk">
+      <pre className="leading-normal m-auto text-boyblue">
         <code>
           {`
                       .,,uod8B8bou,,.
