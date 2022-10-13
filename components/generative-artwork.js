@@ -49,6 +49,7 @@ const GenerativeArtwork = ({ height, border, tick }) => {
           grid-template-rows: repeat(9, 1fr);
           grid-template-columns: repeat(13, 1fr);
           padding: ${border === true ? "7%" : "6%"};
+          background-color: white;
         }
         .cell-1 {
           background-color: white;

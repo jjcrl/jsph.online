@@ -10,7 +10,7 @@ const Topper = ({ line, image }) => {
           </div>
 
           <div
-            className={`w-screen h-1/7 flex flex-col justify-end pb-5 pl-10 pt-5 bg-white text-white absolute bottom-0`}
+            className={`w-screen h-1/7 flex flex-col justify-end pb-5 pl-10 pt-5 bg-stone-100 text-white absolute bottom-0`}
           >
             <h6 className="mix-blend-difference">{line}</h6>
           </div>

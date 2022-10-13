@@ -1,8 +1,8 @@
 const NcNewsFront = () => {
   return (
     <div className="mocks">
-      <div className="bg-white w-screen h-screen flex flex-row justify-center	items-center	 gap-10 p-5">
-        <div className="flex flex-col w-2/3 bg-neutral-100 h-2/3 m-0 rounded-xl">
+      <div className="bg-stone-100 w-screen h-screen flex flex-row justify-center	items-center gap-10 p-5">
+        <div className="flex flex-col w-2/3 bg-white h-2/3 m-0 rounded-xl shadow-sm">
           <div className="bg-neutral-800 w-full h-6 mt-0 rounded-t-xl flex flex-row justify-start gap-2 pt-2 pl-3 pb-2">
             <span className="bg-neutral-400 w-2.5 h-2.5 block rounded-2xl"></span>
             <span className="bg-neutral-500 w-2.5 h-2.5 block rounded-2xl"></span>
@@ -54,7 +54,7 @@ const NcNewsFront = () => {
 
             <div className="flex flex-col gap-5  w-2/3 h-full ">
               <div className="flex flex-row gap-5  m-auto w-full h-full">
-                <div className="w-1/2 h-full  rounded-xl flex flex-col p-1 bg-white">
+                <div className="w-1/2 h-full  rounded-xl flex flex-col p-1 bg-neutral-50">
                   <div className="flex flex-col m-auto p-2">
                     <span className="leading-none text-lg underline opacity-70">
                       Learn HTML5, CSS3 and responsive web design in one go.
@@ -91,7 +91,7 @@ const NcNewsFront = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-1/2 h-full bg-white  rounded-xl flex flex-col">
+                <div className="w-1/2 h-full bg-neutral-50  rounded-xl flex flex-col">
                   <div className="flex flex-col m-auto p-2">
                     <span className="leading-none text-lg underline opacity-70">
                       The baltle for Node.js security has begun.
@@ -133,7 +133,7 @@ const NcNewsFront = () => {
                 </div>
               </div>
               <div className="flex flex-row gap-5  m-auto w-full h-full">
-                <div className="w-1/2 h-full bg-white  rounded-xl flex flex-col">
+                <div className="w-1/2 h-full bg-neutral-50  rounded-xl flex flex-col">
                   <div className="flex flex-col m-auto p-2">
                     <span className="leading-none text-lg underline opacity-70">
                       The Notorius MSG's unlikely secret to sucsess.
@@ -174,7 +174,7 @@ const NcNewsFront = () => {
                   </div>
                 </div>
 
-                <div className="w-1/2 h-full bg-white  rounded-xl flex flex-col">
+                <div className="w-1/2 h-full bg-neutral-50  rounded-xl flex flex-col">
                   <div className="flex flex-col m-auto p-2">
                     <span className="leading-none text-lg underline opacity-70">
                       Why JavaScript’s Methods are Essential for JavaScript
@@ -220,7 +220,7 @@ const NcNewsFront = () => {
           </div>
         </div>
         <div
-          className=" flex flex-col bg-neutral-100 h-3/4 w-80 m-0"
+          className=" flex flex-col bg-white h-3/4 w-80 m-0 shadow-xl"
           id="iphone-mockup"
         >
           <div className="bg-neutral-900 w-40 h-5 ml-16 -mt-1 rounded-b-3xl fixed"></div>
@@ -258,16 +258,16 @@ const NcNewsFront = () => {
             </span>
           </div>
 
-          <span className="ml-8 opacity-50 italic w-fit -mb-3 mt-2">
+          <span className="ml-8 opacity-50 italic w-fit -mb-4 mt-5">
             hide comments
           </span>
           <div>
-            <div className="w-10/12 h-12 bg-white m-auto mb-3 rounded-xl flex flex-col justify-end items-end">
+            <div className="w-10/12 h-12 bg-white m-auto mb-3 rounded-xl flex flex-col justify-end items-end border border-gray-200">
               <div className="bg-cod w-1/3 h-5 rounded-lg m-1.5 p-auto pl-3 pt-0.5">
                 <p className="text-xs text-pale">comment</p>
               </div>
             </div>
-            <div className="w-10/12 h-max bg-white m-auto mb-3 rounded-3xl">
+            <div className="w-10/12 h-max bg-gray-50 m-auto mb-3 rounded-2xl border border-gray-100">
               <div className="flex flex-row h-10 ">
                 <div className="bg-boyblue rounded-full w-4 h-4 mt-5 ml-4"></div>
                 <span className="mt-5 text-xs ml-2 underline opacity-70 tracking-loose">
