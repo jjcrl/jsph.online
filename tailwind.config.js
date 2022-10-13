@@ -60,11 +60,11 @@ module.exports = {
     "bg-cod",
     "bg-dayglow",
     "py-16",
+    "py-20",
     "px-20",
+    "px-32",
     "pb-28",
     "bg-indigo-100",
-    "py-20",
-    "px-32",
   ],
   plugins: [],
   variants: {
