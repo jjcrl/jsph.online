@@ -14,16 +14,14 @@ export const Navigation = () => {
   return (
     <>
       <header
-        className="flex flex-row w-screen fixed justify-between px-5 py-5 z-40 pr-16"
+        className="flex flex-row w-screen fixed justify-between px-5 py-5 z-40 pr-16 bg-transparent"
         data-scroll-section
       >
         <Link href="/" passHref>
           <HomeButton />
         </Link>
-        <nav
-          className={`m-0 self-center ${toggle ? "text-white" : "text-cod"}`}
-        >
-          <div
+        <nav className="m-0 self-center bg-transparent">
+          <button
             id="nav-icon4"
             onClick={() => {
               toggleNav();
@@ -33,7 +31,7 @@ export const Navigation = () => {
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </button>
         </nav>
       </header>
 
@@ -138,7 +136,6 @@ export const Navigation = () => {
           left: 0;
           transform: rotate(0deg);
           transition: 0.25s ease-in-out;
-          opacity: 95%;
         }
 
         #nav-icon4 {
@@ -147,6 +144,10 @@ export const Navigation = () => {
           position: relative;
           transform: rotate(0deg);
           transition: 0.5s ease-in-out;
+          margin-top: 20px;
+          margin-right: -20px;
+          background-color: transparent;
+          opacity: 90%;
         }
 
         #nav-icon4 span:nth-child(1) {
@@ -168,6 +169,7 @@ export const Navigation = () => {
           transform: rotate(45deg);
           top: 6.5px;
           left: 8px;
+          width: 100%;
         }
 
         #nav-icon4.open span:nth-child(2) {

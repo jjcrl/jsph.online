@@ -21,11 +21,12 @@ export const HomeButton = React.forwardRef(({ onClick, href }, ref) => {
         style={{
           fontFamily: "GT Maru Trial",
           fontSize: "1.2rem",
+          fontWeight: 600,
         }}
       >
         <textPath textLength="240" href="#textcircle-home">
           <a href={href} onClick={onClick} ref={ref} className="fill-white">
-            JSPH.ONLINE
+            JSPH.ONLINE.
           </a>
         </textPath>
       </text>
