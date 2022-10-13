@@ -39,7 +39,7 @@ const ShowCase = ({ items }) => {
   return (
     <>
       <section
-        className="w-screen flex flex-row relative justify-items-end mb-20"
+        className="w-screen flex flex-row relative justify-items-end bg-stone-100"
         data-scroll-section
         id="target"
         data-scroll-id="target"
