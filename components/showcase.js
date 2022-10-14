@@ -39,7 +39,7 @@ const ShowCase = ({ items }) => {
   return (
     <>
       <section
-        className="w-screen flex flex-row relative justify-items-end bg-stone-100"
+        className="hidden sm:flex w-screen flex flex-row relative justify-items-end bg-stone-100"
         data-scroll-section
         id="target"
         data-scroll-id="target"
@@ -50,17 +50,17 @@ const ShowCase = ({ items }) => {
           data-scroll-sticky
           data-scroll-target="#target"
         >
-          <div className="flex flex-col h-screen p-20 pb-10 justify-end w-full h-full">
+          <div className="flex flex-col h-screen p-20 pb-12 justify-end w-full h-full">
             <h6 className="text-white mix-blend-difference pb-2">
               {items[index].title}
             </h6>
             <h5 className="text-white mix-blend-difference">
               {items[index].description}
             </h5>
-            <ul className="flex flex-row text-pale mix-blend-difference text-xs gap-3 italic py-2 opacity-70 pl-1">
+            <ul className="flex flex-row text-pale mix-blend-difference text-xs gap-3 opacity-50 w-fit h-min">
               {items[index].tags
                 ? items[index].tags.map((tag, index) => (
-                    <li key={`tag-${index}`} className="text-sm">
+                    <li key={`tag-${index}`} className="leading-none py-2">
                       {tag}
                     </li>
                   ))
@@ -74,7 +74,7 @@ const ShowCase = ({ items }) => {
             <div
               data-scroll
               data-scroll-id={item.id}
-              className={`h-screen flex flex-col bg-transparent`}
+              className={`h-screen flex flex-col w-full bg-transparent`}
             >
               {item.image}
             </div>

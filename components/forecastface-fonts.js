@@ -1,8 +1,11 @@
 const ForecastFaceFonts = () => {
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-row justify-center w-screen h-screen align-center  text-6xl p-10 bg-stone-100">
-        <div className="bg-ink text-road  w-1/2 grid grid-rows-5 grid-cols-5 p-5">
+    <div className="flex flex-col sm:pt-28">
+      <h6 className="font-semibold px-5 text-stone-400 leading-normal py-5 sm:px-10 sm:pt-0 sm:py-0">
+        Typeface — GT Maru Semi-Bold.
+      </h6>
+      <div className="flex flex-col justify-center w-full align-center text-6xl bg-stone-100 h-min sm:flex-row sm:p-10">
+        <div className="bg-ink text-road w-full grid grid-rows-auto grid-cols-5 py-5">
           <p>00</p>
           <p>°</p>
           <p>01</p>
@@ -55,7 +58,7 @@ const ForecastFaceFonts = () => {
           <p>°</p>
         </div>
 
-        <div className="text-whitesmoke bg-gray-200 grid grid-rows-5 grid-cols-5 w-1/2 p-5">
+        <div className="text-whitesmoke bg-gray-200 grid grid-rows-auto grid-cols-5 w-full py-5">
           <p>.</p>
           <p>Aa</p>
           <p>.</p>
@@ -108,14 +111,23 @@ const ForecastFaceFonts = () => {
           <p>Zz</p>
         </div>
       </div>
-      <h6 className="font-semibold px-10 text-ink leading-none">
-        Typeface: GT Maru Semi-Bold
-      </h6>
 
       <style jsx>
         {`
           p {
             font-family: GT Maru Trial;
+            line-height: 1.5rem;
+            font-size: 1.75rem;
+            padding: 0.5rem;
+            font-weight: 500;
+          }
+
+          @media (min-width: 640px) {
+            p {
+              line-height: 2.5rem;
+              font-size: 3.5rem;
+              padding: 1rem;
+            }
           }
         `}
       </style>

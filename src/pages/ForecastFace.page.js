@@ -12,20 +12,24 @@ export default function ForecastFace() {
     <>
       <Topper line="Forecast Face" image={forecastface} />
       <WordsSection
-        section1="Weather Data Visualisation."
+        section1="Inspired, Simple and Effective. Weather data at a glance."
         section2="A Stand alone webapp for daily weather forecast, with temperature, sun and rain data. Designed after a clock face to prove 24 hour weather forecast at a glance."
         section3="As always , source code is avvaile on github and the hosted site is ..."
         section4="⇥ www.forecastface.netlify.app"
-        sectionclass="bg-stone-100 w-screen h-max flex flex-row justify-between py-16 px-20 pb-10"
       />
-      <ForecastFaceItems />
-      <Gallery items={[<ForecastFaceFonts />, <ForecastFaceColours />]} />
+
+      <Gallery
+        items={[
+          <ForecastFaceItems />,
+          <ForecastFaceFonts />,
+          <ForecastFaceColours />,
+        ]}
+      />
 
       <WordsSection
-        section1="Want to know more ?"
+        section1="Want to know more?"
         section2="As always github version controll was used throught, meaning you can snoop around to your hearts content."
         section3="— www.github.com/jjcrl/forecast-face"
-        sectionclass="bg-stone-100 w-screen h-max flex flex-row justify-between py-20 px-20 pb-28"
       />
 
       <Footer />

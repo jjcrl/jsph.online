@@ -2,26 +2,26 @@ const Hero = () => {
   return (
     <section
       data-scroll-section
-      className="flex flex-col bg-neutral-50 w-screen h-screen p-0 m-0 bg-stone-100"
+      className="flex flex-col bg-stone-100 w-screen h-full bg-stone-100 items-center align-center justify-center bg-boyblue py-36 gap-20 sm:py-16"
     >
-      <pre className="leading-normal m-auto text-boyblue">
+      <pre className="text-white text-xxs tracking-normal leading-normal sm:text-xs mix-blend-difference">
         <code>
           {`
-                      .,,uod8B8bou,,.
-              ..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:.
-         ,=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||||
-         !...:!TVBBBRPFT||||||||||!!^^""'     ||||
-         !.......:!?|||||!!^^""''            ||||
-         !.........||||                     ||||
-         !.........||||                     ||||
-         !.........||||     jsph.online      ||||
-         !.........||||                     ||||
-         !.........||||                     ||||
-         !.........||||                     ||||
-         '.........||||                    ,||||
-          .;.......||||               _.-!!|||||
-   .,uodWBBBBb.....||||       _.-!!|||||||||!:'
-!YBBBBBBBBBBBBBBb..!|||:..-!!|||||||!iof68BBBBBb....
+                      .,,uod8B8bou,,..
+              ..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:..
+         ,=m8BBBBBBBBBBBBBBBRPFT?!|||||||||||||||
+         !...:!TVBBBRPFT||||||||||!!^^"''    ||||
+         !.......:!?|||||!!^^""''           ||||
+         !.........||||                   ||||
+         !.........||||                   ||||
+         !.........||||                   ||||
+         !.........||||                   ||||
+         !.........||||                   ||||
+         !.........||||                   ||||
+         '.........||||                  ,,|||
+          .;.......||||             __.!!||||||
+   .,uodWBBBBb.....|||||        _.-!!|||||||||!:'
+!YBBBBBBBBBBBBBBb..!||||:..-!!|||||||!iof68BBBBBb....
 !..YBBBBBBBBBBBBBBb!!||||||||!iof68BBBBBBRPFT?!::   '.
 !....YBBBBBBBBBBBBBBbaaitf68BBBBBBRPFT?!:::::::::     '.
 !......YBBBBBBBBBBBBBBBBBBBRPFT?!::::::;:!^"';:::       '.
@@ -40,6 +40,11 @@ const Hero = () => {
                      `}
         </code>
       </pre>
+      <div>
+        <h4 className="m-auto leading-none pr-8 text-white mix-blend-difference font-medium tracking-widest">
+          JSPH.☺NLiNE
+        </h4>
+      </div>
     </section>
   );
 };

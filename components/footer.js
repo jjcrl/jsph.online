@@ -37,31 +37,38 @@ const Footer = () => {
 
   return (
     <>
-      <footer data-scroll-section className="w-screen h-min bg-stone-100">
-        <div className="flex flex-row w-full justify-between">
-          <div className="h-full flex flex-col gap-3 px-10 pt-10 text-boyblue">
+      <footer
+        data-scroll-section
+        className="w-screen h-full bg-stone-100 font-medium border-t-4 border-stone-50"
+      >
+        <div className="flex flex-col justify-between sm:flex-row">
+          <div className="h-full flex flex-col gap-5 px-5 pt-10 text-boyblue z-10 sm:gap-4 sm:px-10">
             <h4 id="blinking-cursor">{text}</h4>
-            <h4 className="underline">hello@jsph.online</h4>
+            <h4 className="underline font-bold break-all sm:text-5xl">
+              hello@jsph.online
+            </h4>
           </div>
 
-          <h1 className="relative top-20 left-36 text-stone-200">☺</h1>
+          <h1 className="text-white z-0 absolute sm:-mt-20 sm:pt-2 sm:right-1/3 right-10 -mt-10 font-black">
+            ☺
+          </h1>
 
-          <div className=" flex flex-row m-auto gap-16 pt-12 mr-10">
-            <div className="flex flex-col gap-3 font-bold text-boyblue">
+          <div className=" flex flex-row m-auto gap-10 pt-10 ml-5 z-10 sm:mr-10 sm:text-right">
+            <div className="flex flex-col gap-3 text-boyblue">
               <h6 className="underline">Stay Social</h6>
-              <h5>Linkedin ↗</h5>
-              <h5>Github ↗</h5>
+              <h5 className="leading-none font-bold">Linkedin ↗</h5>
+              <h5 className="leading-none font-bold">Github ↗</h5>
             </div>
 
-            <div className="flex flex-col gap-3 font-bold text-boyblue">
+            <div className="flex flex-col gap-3 text-boyblue sm:text-right">
               <h6 className="underline">Find me at</h6>
-              <h5>53.4875°N.</h5>
-              <h5>02.2901°W</h5>
+              <h5 className="leading-none">53.4875°N.</h5>
+              <h5 className="leading-none">02.2901°W</h5>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-row justify-between w-screen px-10 text-stone-200 pt-5">
+        <div className="flex flex-row justify-between w-screen px-5 py-5 text-boyblue opacity-20 sm:px-10 sm:py-5 h-full">
           <u>©2022</u>
           <u>JSPH.ONLINE</u>
         </div>
