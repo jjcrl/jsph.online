@@ -43,6 +43,7 @@ module.exports = {
       fontSize: {
         jumbo: "28rem",
         big: "20rem",
+        xxs: "0.5rem",
       },
       borderRadius: {
         thick: "5rem",
@@ -61,10 +62,13 @@ module.exports = {
     "bg-dayglow",
     "py-16",
     "py-20",
+    "py-28",
     "px-20",
     "px-32",
     "pb-28",
     "bg-indigo-100",
+    "bg-lime-400",
+    "bg-lime-600",
   ],
   plugins: [],
   variants: {
