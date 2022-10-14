@@ -1,22 +1,15 @@
-const ColourPalette = ({ hexs, width }) => {
+const ColourPalette = ({ hexs }) => {
   return (
-    <div className={`grid grid-rows-1 grid-cols-4  m-auto w-full h-full`}>
+    <div className="grid grid-rows-4 grid-cols-1 w-full h-full text-xs sm:grid-rows-1 sm:grid-cols-4">
       {hexs.map((hex, i) => (
         <span
-          className={`w-full h-72 m-auto`}
+          className="w-full h-full"
           id="colour"
           style={{
             backgroundColor: `${hexs[i]}`,
           }}
         >
-          <label
-            style={{
-              color: "white",
-              fontSize: `${width / 70}em`,
-              fontWeight: 700,
-              mixBlendMode: "difference",
-            }}
-          >
+          <label className="text-white mix-blend-difference relative left-2 top-2 w-min h-min sm:text-3xl sm:font-bold sm:tracking-widest">
             {hex}
           </label>
         </span>
