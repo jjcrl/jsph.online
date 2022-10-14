@@ -6,7 +6,10 @@ import Link from "next/link";
 export default function Work() {
   return (
     <>
-      <section data-scroll-section className="flex flex-col h-fit w-screen">
+      <section
+        data-scroll-section
+        className="flex flex-col h-fit w-screen hidden"
+      >
         <div className="block w-screen h-screen relative">
           <div className="inset-0 w-screen h-screen">
             <Image src={ncnews} />
