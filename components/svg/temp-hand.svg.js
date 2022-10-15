@@ -34,6 +34,7 @@ const TempHandSVG = () => {
             opacity="70%"
             alignmentBaseline="middle"
             transform="rotate(45 45 45)"
+            fontWeight={500}
           >
             21
           </text>
@@ -46,6 +47,7 @@ const TempHandSVG = () => {
             opacity="70%"
             alignmentBaseline="middle"
             transform="rotate(25 25 25)"
+            fontWeight={500}
           >
             20
           </text>
@@ -58,6 +60,7 @@ const TempHandSVG = () => {
             opacity="70%"
             alignmentBaseline="middle"
             transform="rotate(55 55 55)"
+            fontWeight={500}
           >
             22
           </text>
