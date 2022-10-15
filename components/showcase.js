@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
 import { SmoothScrollContext } from "../src/contexts/SmoothScroll.context";
 
@@ -39,7 +40,7 @@ const ShowCase = ({ items }) => {
   return (
     <>
       <section
-        className="hidden sm:flex w-screen flex flex-row relative justify-items-end bg-stone-100"
+        className="hidden sm:flex w-screen flex flex-row relative justify-items-end bg-stone-100 w-full h-full"
         data-scroll-section
         id="target"
         data-scroll-id="target"
@@ -51,13 +52,13 @@ const ShowCase = ({ items }) => {
           data-scroll-target="#target"
         >
           <div className="flex flex-col h-screen p-20 pb-12 justify-end w-full h-full">
-            <h6 className="text-white mix-blend-difference pb-2">
+            <h6 className="text-white mix-blend-difference pb-2 font-medium">
               {items[index].title}
             </h6>
-            <h5 className="text-white mix-blend-difference">
+            <h5 className="text-white mix-blend-difference font-bold">
               {items[index].description}
             </h5>
-            <ul className="flex flex-row text-pale mix-blend-difference text-xs gap-3 opacity-50 w-fit h-min">
+            <ul className="flex flex-row text-pale mix-blend-difference text-xs gap-3 opacity-50 w-fit h-min font-medium">
               {items[index].tags
                 ? items[index].tags.map((tag, index) => (
                     <li key={`tag-${index}`} className="leading-none py-2">
@@ -69,17 +70,40 @@ const ShowCase = ({ items }) => {
           </div>
         </div>
 
-        <div className={items[index].imageclass} data-scroll>
+        <div className="w-1/2 bg-black" data-scroll>
           {items.map((item) => (
             <div
               data-scroll
               data-scroll-id={item.id}
-              className={`h-screen flex flex-col w-full bg-transparent`}
+              className="h-screen flex flex-col w-full bg-transparent"
             >
               {item.image}
             </div>
           ))}
         </div>
+      </section>
+
+      <section
+        data-scroll-section
+        className="bg-red-100 flex flex-col w-screen h-full sm:hidden"
+      >
+        {items.map((item) => (
+          <div className="w-screen h-full bg-red-200 flex flex-col">
+            <div className="h-fit w-fit">
+              <Image src={item.mini_image} height={555} width={500} />
+            </div>
+            <div className={item.image_class}>
+              <h6 className="mix-blend-difference">{item.title}</h6>
+              <div>
+                <ul className="flex text-xs w-full justify-start py-1 mix-blend-difference gap-2">
+                  {item.tags.map((item_tag) => (
+                    <li>{item_tag}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        ))}
       </section>
     </>
   );
