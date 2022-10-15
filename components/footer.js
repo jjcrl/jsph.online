@@ -39,7 +39,7 @@ const Footer = () => {
     <>
       <footer
         data-scroll-section
-        className="w-screen h-full bg-stone-100 font-medium border-t-4 border-stone-50"
+        className="w-screen h-full bg-stone-100 font-medium"
       >
         <div className="flex flex-col justify-between sm:flex-row">
           <div className="h-full flex flex-col gap-5 px-5 pt-10 text-boyblue z-10 sm:gap-4 sm:px-10">
@@ -49,9 +49,9 @@ const Footer = () => {
             </h4>
           </div>
 
-          <h1 className="text-white z-0 absolute sm:-mt-20 sm:pt-2 sm:right-1/3 right-10 -mt-10 font-black">
+          {/* <h1 className="text-white z-0 absolute sm:-mt-20 sm:pt-2 sm:right-1/3 right-10 -mt-10 font-black">
             ☺
-          </h1>
+          </h1> */}
 
           <div className=" flex flex-row m-auto gap-10 pt-10 ml-5 z-10 sm:mr-10 sm:text-right">
             <div className="flex flex-col gap-3 text-boyblue">
