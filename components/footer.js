@@ -39,28 +39,24 @@ const Footer = () => {
     <>
       <footer
         data-scroll-section
-        className="w-screen h-full bg-stone-100 font-medium"
+        className="w-screen h-full bg-boyblue font-medium"
       >
         <div className="flex flex-col justify-between sm:flex-row">
-          <div className="h-full flex flex-col gap-5 px-5 pt-10 text-boyblue z-10 sm:gap-4 sm:px-10">
+          <div className="h-full flex flex-col gap-5 px-5 pt-10 text-white z-10 sm:gap-4 sm:px-10">
             <h4 id="blinking-cursor">{text}</h4>
             <h4 className="underline font-bold break-all sm:text-5xl">
               hello@jsph.online
             </h4>
           </div>
 
-          {/* <h1 className="text-white z-0 absolute sm:-mt-20 sm:pt-2 sm:right-1/3 right-10 -mt-10 font-black">
-            ☺
-          </h1> */}
-
-          <div className=" flex flex-row m-auto gap-10 pt-10 ml-5 z-10 sm:mr-10 sm:text-right">
-            <div className="flex flex-col gap-3 text-boyblue">
+          <div className=" flex flex-row m-auto gap-10 pt-5 sm:pt-10 px-5 z-10 sm:mr-5 sm:text-right w-full justify-start sm:justify-end sm:text-2xl sm:w-fit">
+            <div className="flex flex-col gap-3 text-white text-left">
               <h6 className="underline">Stay Social</h6>
               <h5 className="leading-none font-bold">Linkedin ↗</h5>
               <h5 className="leading-none font-bold">Github ↗</h5>
             </div>
 
-            <div className="flex flex-col gap-3 text-boyblue sm:text-right">
+            <div className="flex flex-col gap-3 text-white text-left sm:text-right">
               <h6 className="underline">Find me at</h6>
               <h5 className="leading-none">53.4875°N.</h5>
               <h5 className="leading-none">02.2901°W</h5>
@@ -68,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-row justify-between w-screen px-5 py-5 text-boyblue opacity-20 sm:px-10 sm:py-5 h-full">
+        <div className="flex flex-row justify-between w-screen px-5 py-5 text-white opacity-10 sm:px-11 sm:py-5 h-full">
           <u>©2022</u>
           <u>JSPH.ONLINE</u>
         </div>
