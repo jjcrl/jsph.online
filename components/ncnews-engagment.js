@@ -1,8 +1,8 @@
 const NcNewsEngagement = () => {
   return (
-    <div className="w-screen h-screen flex p-10 bg-stone-100 pb-28">
-      <div className="w-1/2 h-full px-12 flex" id="system-ui">
-        <div className="w-full h-full bg-cod grid grid-cols-7 grid-rows-8 text-center items-center text-4xl text-blurple px-4 m-auto py-5 font-bold">
+    <div className="w-screen sm:h-screen h-full flex sm:p-10 p-5 bg-stone-100sm:pb-28 flex-col sm:flex-row">
+      <div className="sm:w-1/2 h-full sm:px-12 flex" id="system-ui">
+        <div className="w-full h-full bg-cod grid grid-cols-7 grid-rows-8 text-center items-center sm:text-4xl text-2xl  text-blurple px-4 m-auto py-5 font-bold">
           <span>≡</span>
           <span>++</span>
           <span>≡</span>
@@ -19,7 +19,7 @@ const NcNewsEngagement = () => {
           <span>++</span>
           <span>≡</span>
           <span>++</span>
-          <span className="row-span-3 col-span-3 text-big flex justify-center items-center font-black text-watermelon">
+          <span className="row-span-3 col-span-3 sm:text-big flex justify-center items-center font-black text-watermelon text-large">
             ¤
           </span>
           <span>++</span>
@@ -48,7 +48,7 @@ const NcNewsEngagement = () => {
           <span>≡</span>
         </div>
       </div>
-      <div className="w-1/2 h-full flex flex-col gap-8 justify-end px-10 pb-10">
+      <div className="sm:w-1/2 h-full flex flex-col gap-8 justify-end sm:px-10 sm:pb-10 pt-10">
         <h4 className="font-medium">Engagment Tracked</h4>
         <h7>
           Engagement is center for ncnews, through the site it is display in

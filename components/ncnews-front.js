@@ -1,7 +1,7 @@
 const NcNewsFront = () => {
   return (
     <div className="mocks">
-      <div className="bg-stone-100 w-screen h-screen flex flex-row justify-center	items-center gap-10 p-5">
+      <div className="bg-stone-100 w-screen h-screen flex flex-row sm:block hidden justify-center	items-center gap-10 p-5">
         <div className="flex flex-col w-2/3 bg-white h-2/3 m-0 rounded-xl shadow-sm">
           <div className="bg-neutral-800 w-full h-6 mt-0 rounded-t-xl flex flex-row justify-start gap-2 pt-2 pl-3 pb-2">
             <span className="bg-neutral-400 w-2.5 h-2.5 block rounded-2xl"></span>

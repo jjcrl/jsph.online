@@ -41,8 +41,8 @@ const GenerativeArtwork = ({ height, border, tick }) => {
       <style jsx>{`
         .grid {
           width: 100%;
-          height: ${height}rem;
-          border: ${border === true ? `solid 1rem #181315` : `none`};
+          height: ${height / 2.5}rem;
+          border: ${border === true ? `solid 0.8rem #181315` : `none`};
           border-radius: 2px;
           margin: auto;
           display: grid;
@@ -50,6 +50,20 @@ const GenerativeArtwork = ({ height, border, tick }) => {
           grid-template-columns: repeat(13, 1fr);
           padding: ${border === true ? "7%" : "6%"};
           background-color: white;
+        }
+        @media (min-width: 640px) {
+          .grid {
+            width: 100%;
+            height: ${height}rem;
+            border: ${border === true ? `solid 1rem #181315` : `none`};
+            border-radius: 2px;
+            margin: auto;
+            display: grid;
+            grid-template-rows: repeat(9, 1fr);
+            grid-template-columns: repeat(13, 1fr);
+            padding: ${border === true ? "7%" : "6%"};
+            background-color: white;
+          }
         }
         .cell-1 {
           background-color: white;
