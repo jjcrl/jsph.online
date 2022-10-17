@@ -17,13 +17,23 @@ const WordsSection = ({ type, section1, section2, section3, section4 }) => {
         </>
       ) : (
         <>
-          <h4 className="w-fit leading-tight text-ink font-medium border p-5">
+          <h4 className="w-1/4 font-regular text-left pl-20 leading-none">
             {section1}
           </h4>
-          <div className="flex flex-col font-regular border p-10 text-ink">
-            <h7 className="pb-5">{section2}</h7>
-            <h7 className="pb-5"> {section3}</h7>
-            <h7 className="underline text-boyblue text-2xl">{section4} </h7>
+          <div className="flex flex-col font-regular W-3/4 mt-16 gap-4 pb-10">
+            <h7>{section2}</h7>
+            <h7> {section3}</h7>
+            <div className="flex gap-4 justify-end w-fit ml-auto">
+              <h7
+                className="text-boyblue text-3xl underline font-medium"
+                href={section4}
+              >
+                {section4}
+              </h7>
+              <span className="text-4xl relative bottom-2 text-boyblue font-bold font-bold">
+                ⟶
+              </span>
+            </div>
           </div>
         </>
       )}
