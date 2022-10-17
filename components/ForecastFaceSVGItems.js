@@ -5,7 +5,7 @@ import TempHandSVG from "./svg/temp-hand.svg";
 const ForecastFaceItems = () => {
   return (
     <section className="flex flex-col bg-stone-100 w-screen h-full pb-20 pt-10 sm:pt-5">
-      <h3 className="text-left w-full pb-5 px-5 m-auto sm:px-28 sm:text-center sm:pb-20 sm:pt-10 font-bold text-2xl sm:text-5xl text-white mix-blend-difference">
+      <h3 className="text-left w-full pb-5 px-5 m-auto sm:text-center sm:pb-14 font-medium text-2xl sm:text-4xl text-ink sm:w-2/3">
         "Data visuals are the language of decison making, good ones effectliy
         convey infomation. Great ones enable, inform and improve decison
         making."
@@ -68,21 +68,21 @@ const ForecastFaceItems = () => {
 
       <div className="hidden px-10 bg-stone-100 pt-10 flex-col gap-10 sm:flex-row sm:px-20 sm:flex">
         <div className="w-full flex flex-col gap-3">
-          <h5>⁰¹ Todays data, at a glance.</h5>
+          <h5 className="font-medium">⁰¹ Todays data, at a glance.</h5>
           <h6 className="px-5">
             At the center of the watch face is the days core pieces of data, so
             you can stay informed at a single glance.
           </h6>
         </div>
         <div className="w-full flex flex-col gap-3">
-          <h5>⁰² Displaying sunlight hours.</h5>
+          <h5 className="font-medium">⁰² Displaying sunlight hours.</h5>
           <h6 className="px-5">
             A simple visual depiction of sun rise and sun set and where the sun
             will be at its highest. So you can spend time in the sun.
           </h6>
         </div>{" "}
         <div className="w-full flex flex-col gap-3">
-          <h5>⁰³ Temperature right now.</h5>
+          <h5 className="font-medium">⁰³ Temperature right now.</h5>
           <h6 className="px-5">
             Above the moving hand is the temperatire right now. Keeping things
             simple and effective .
