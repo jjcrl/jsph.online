@@ -7,9 +7,11 @@ const Artwork = () => {
         <GenerativeArtwork height={44} border={true} tick={true} />
       </div>
 
-      <div className="w-full m-auto flex flex-col px-5 gap-8 justify-center align-center text-center">
-        <h4 className="pt-10">Generative Grid Artwork</h4>
-        <h7 className="w-2/3 m-auto">
+      <div className="w-full m-auto flex flex-col pl-16 pr-28 gap-8 justify-center align-center text-center py-5">
+        <h4 className="pt-10 font-medium text-left px-36">
+          Generative Grid Artwork
+        </h4>
+        <h7 className="m-auto px-36 text-left font-regular">
           Creative coding to genreate endless version of grid art, with the web
           apps core colours. Design to create a pefect square in the middle
           should the values align.As always full coruce code can be found on my
