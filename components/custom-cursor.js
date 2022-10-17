@@ -16,17 +16,19 @@ export default function CustomCursor() {
     <>
       <div className="cursor" ref={cursorRef}></div>
       <style jsx>{`
-        .cursor {
-          width: 25px;
-          height: 25px;
-          border: 1px solid white;
-          border-radius: 50%;
-          position: fixed;
-          pointer-events: none;
-          transform: translate(-50%, -50%);
-          z-index: 99999999999;
-          background-color: white;
-          mix-blend-mode: difference;
+        @media (min-width: 640px) {
+          .cursor {
+            width: 25px;
+            height: 25px;
+            border: 1px solid white;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            z-index: 99999999999;
+            background-color: white;
+            mix-blend-mode: difference;
+          }
         }
       `}</style>
     </>
