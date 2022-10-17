@@ -42,9 +42,9 @@ const Footer = () => {
         className="w-screen h-full bg-boyblue font-medium"
       >
         <div className="flex flex-col justify-between sm:flex-row">
-          <div className="h-full flex flex-col gap-5 px-5 pt-10 text-white z-10 sm:gap-4 sm:px-10">
+          <div className="h-full flex flex-col gap-3 sm:gap-5 px-5 pt-10 text-white z-10 sm:gap-4 sm:px-10">
             <h4 id="blinking-cursor">{text}</h4>
-            <h4 className="underline font-bold break-all sm:text-5xl">
+            <h4 className="underline font-bold break-all sm:text-5xl text-2xl">
               hello@jsph.online
             </h4>
           </div>
@@ -52,14 +52,14 @@ const Footer = () => {
           <div className=" flex flex-row m-auto gap-10 pt-5 sm:pt-10 px-5 z-10 sm:mr-5 sm:text-right w-full justify-start sm:justify-end sm:text-2xl sm:w-fit">
             <div className="flex flex-col gap-3 text-white text-left">
               <h6 className="underline">Stay Social</h6>
-              <h5 className="leading-none font-bold">Linkedin ↗</h5>
-              <h5 className="leading-none font-bold">Github ↗</h5>
+              <h5 className="leading-none font-bold text-xl">Linkedin</h5>
+              <h5 className="leading-none font-bold text-xl">Github </h5>
             </div>
 
             <div className="flex flex-col gap-3 text-white text-left sm:text-right">
               <h6 className="underline">Find me at</h6>
-              <h5 className="leading-none">53.4875°N.</h5>
-              <h5 className="leading-none">02.2901°W</h5>
+              <h5 className="leading-none text-xl">53.4875°N.</h5>
+              <h5 className="leading-none text-xl">02.2901°W</h5>
             </div>
           </div>
         </div>
