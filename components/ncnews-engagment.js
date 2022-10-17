@@ -1,8 +1,8 @@
 const NcNewsEngagement = () => {
   return (
     <div className="w-screen h-screen flex p-10 bg-stone-100 pb-28">
-      <div className="w-1/2 h-full px-12 py-5 flex" id="system-ui">
-        <div className="w-full h-full bg-cod grid grid-cols-7 grid-rows-8 text-center items-center text-4xl text-blurple px-4 m-auto">
+      <div className="w-1/2 h-full px-12 flex" id="system-ui">
+        <div className="w-full h-full bg-cod grid grid-cols-7 grid-rows-8 text-center items-center text-4xl text-blurple px-4 m-auto py-5 font-bold">
           <span>≡</span>
           <span>++</span>
           <span>≡</span>
@@ -48,8 +48,8 @@ const NcNewsEngagement = () => {
           <span>≡</span>
         </div>
       </div>
-      <div className="w-1/2 h-full flex flex-col gap-8 justify-center px-10">
-        <h4>Engagment Tracked</h4>
+      <div className="w-1/2 h-full flex flex-col gap-8 justify-end px-10 pb-10">
+        <h4 className="font-medium">Engagment Tracked</h4>
         <h7>
           Engagement is center for ncnews, through the site it is display in
           many ways to highlight whats posts are taking off and what users are
@@ -60,6 +60,11 @@ const NcNewsEngagement = () => {
           For this symbols are used, and on first visit the user is greeted with
           a run down on what each of them means, so that they can stay in the
           know.
+        </h7>
+        <h7>
+          Visual commucagtion with symbols that are introduced from the beging
+          to simpliefer the ui and add more data without overloading the user
+          with too much reading.
         </h7>
       </div>
     </div>
