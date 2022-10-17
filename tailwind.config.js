@@ -44,6 +44,7 @@ module.exports = {
         jumbo: "28rem",
         big: "20rem",
         xxs: "0.5rem",
+        large: "11rem",
       },
       borderRadius: {
         thick: "5rem",
