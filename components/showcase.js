@@ -85,19 +85,19 @@ const ShowCase = ({ items }) => {
 
       <section
         data-scroll-section
-        className="bg-red-100 flex flex-col w-screen h-full sm:hidden"
+        className="flex flex-col w-screen h-full sm:hidden"
       >
         {items.map((item) => (
-          <div className="w-screen h-full bg-red-200 flex flex-col">
+          <div className="w-screen h-full flex flex-col">
             <div className="h-fit w-fit">
               <Image src={item.mini_image} height={555} width={500} />
             </div>
             <div className={item.image_class}>
-              <h6 className="mix-blend-difference">{item.title}</h6>
+              <h6 className="mix-blend-difference font-medium">{item.title}</h6>
               <div>
-                <ul className="flex text-xs w-full justify-start py-1 mix-blend-difference gap-2">
-                  {item.tags.map((item_tag) => (
-                    <li>{item_tag}</li>
+                <ul className="flex text-xs w-full justify-start py-1 mix-blend-difference gap-2 font-regular">
+                  {item.tags.map((item_tag, index) => (
+                    <li key={`mini-tag-${index}`}>{item_tag}</li>
                   ))}
                 </ul>
               </div>
