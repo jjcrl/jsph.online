@@ -5,14 +5,14 @@ import TempHandSVG from "./svg/temp-hand.svg";
 const ForecastFaceItems = () => {
   return (
     <section className="flex flex-col bg-stone-100 w-screen h-full pb-20 pt-10 sm:pt-5">
-      <h3 className="text-left w-full pb-5 px-5 m-auto sm:text-center sm:pb-14 font-medium text-2xl sm:text-4xl text-ink sm:w-2/3">
+      <h3 className="text-left w-full pb-5 px-5 m-auto text-center sm:pb-14 sm:font-medium font-regular text-2xl sm:text-4xl text-ink sm:w-2/3">
         "Data visuals are the language of decison making, good ones effectliy
         convey infomation. Great ones enable, inform and improve decison
         making."
       </h3>
 
       <div className="flex flex-col pt-3 bg-stone-100 mt-10 sm:flex-row sm:px-10 sm:hidden">
-        <div className="w-96 py-10 bg-ink m-auto">
+        <div className="w-11/12 py-10 bg-ink m-auto">
           <p className="text-white px-5 sm:hidden absolute -mt-10 opacity-10">
             ⁰¹
           </p>
@@ -20,12 +20,12 @@ const ForecastFaceItems = () => {
         </div>
         <div className="w-full flex flex-col gap-3 px-5 py-10">
           <h5>⁰¹ Todays data, at a glance.</h5>
-          <h6 className="px-5">
+          <h7 className="pr-5 text-sm">
             At the center of the watch face is the days core pieces of data, so
             you can stay informed at a single glance.
-          </h6>
+          </h7>
         </div>
-        <div className="w-96 bg-ink pt-16 m-auto">
+        <div className="w-11/12 bg-ink pt-16 m-auto">
           <p className="text-white px-5 sm:hidden absolute opacity-10 -mt-14">
             ⁰²
           </p>
@@ -33,18 +33,18 @@ const ForecastFaceItems = () => {
         </div>
         <div className="w-full flex flex-col gap-3 px-5 py-10">
           <h5>⁰² Displaying sunlight hours.</h5>
-          <h6 className="px-5">
+          <h6 className="pr-5 text-sm">
             A simple visual depiction of sun rise and sun set and where the sun
             will be at its highest. So you can spend time in the sun.
           </h6>
         </div>{" "}
-        <div className="w-96 bg-ink pt-16 m-auto">
+        <div className="w-11/12 bg-ink pt-16 m-auto">
           <p className="text-white px-5 sm:hidden -mt-12 opacity-10">⁰³</p>
           <TempHandSVG />
         </div>
         <div className="w-full flex flex-col gap-3 px-5 py-10">
           <h5>⁰³ Temperature right now.</h5>
-          <h6 className="px-5">
+          <h6 className="pr-5 text-sm">
             Above the moving hand is the temperatire right now. Keeping things
             simple and effective .
           </h6>

@@ -31,7 +31,7 @@ export default function ForecastFace() {
         section1="Want to know more?"
         section2="As always github version controll was used throught, meaning you can snoop around to your hearts content."
         section3="— www.github.com/jjcrl/forecast-face"
-        type={2}
+        type={1}
       />
 
       <Footer />
