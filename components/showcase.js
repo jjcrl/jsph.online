@@ -87,13 +87,20 @@ const ShowCase = ({ items }) => {
         data-scroll-section
         className="flex flex-col w-screen h-full sm:hidden"
       >
-        {items.map((item) => (
+        {items.map((item, index) => (
           <div className="w-screen h-full flex flex-col">
             <div className="h-fit w-fit">
-              <Image src={item.mini_image} height={555} width={500} />
+              <Image
+                src={item.mini_image[`image${index + 1}`]}
+                height={555}
+                width={500}
+                loading="lazy"
+              />
             </div>
             <div className={item.image_class}>
-              <h6 className="mix-blend-difference font-medium">{item.title}</h6>
+              <h6 className="mix-blend-difference font-medium text-2xl">
+                {item.title}
+              </h6>
               <div>
                 <ul className="flex text-xs w-full justify-start py-1 mix-blend-difference gap-2 font-regular">
                   {item.tags.map((item_tag, index) => (

@@ -2,11 +2,12 @@ import Footer from "../../components/footer";
 import Topper from "../../components/topper";
 import WordsSection from "../../components/words-section";
 import Gallery from "../../components/gallery";
-import ncnews from "../../public/static/images/ncnews-image2.png";
 import Artwork from "../../components/ncnews-artwork";
 import NcNewsEngagement from "../../components/ncnews-engagment";
 import NcNewsShowcase from "../../components/ncnews.showcase";
 import NcNewsFront from "../../components/ncnews-front";
+
+import ncnews from "../../public/static/images/ncnews-image2.png";
 
 export default function Work2() {
   return (
