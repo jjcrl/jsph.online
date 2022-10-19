@@ -7,11 +7,11 @@
   src: url(../src/fonts/Satoshi/Satoshi-Regular.otf) format("truetype")
     font-weight-normal;
   src: url(../src/fonts/Satoshi/Satoshi-Medium.otf) format("truetype")
-    font-weight-medium;
+    font-weight-600;
   src: url(../src/fonts/Satoshi/Satoshi-Bold.otf) format("truetype")
     font-weight-bold;
   src: url(../src/fonts/Satoshi/Satoshi-Black.otf) format("truetype")
-    front-weight-black;
+    front-weight-900;
 }
 
 @font-face {
@@ -19,13 +19,14 @@
   src: url(../src/fonts/GT_Maru/GT-Maru-Regular-Trial.otf) format("truetype")
     font-weight-normal;
   src: url(../src/fonts/GT_Maru/GT-Maru-Medium-Trial.otf) format("truetype")
-    font-weight-medium;
+    font-weight-600;
   src: url(../src/fonts/GT_Maru/GT-Maru-Bold-Trial.otf) format("truetype")
     font-weight-bold;
   src: url(../src/fonts/GT_Maru/GT-Maru-Black-Trial.otf) format("truetype")
-    font-weight-black;
+    font-weight-900;
 }
-*/ * {
+
+* {
   box-sizing: border-box;
   cursor: none;
 }

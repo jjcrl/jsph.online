@@ -95,6 +95,7 @@ const ShowCase = ({ items }) => {
                 height={555}
                 width={500}
                 loading="lazy"
+                priority={true}
               />
             </div>
             <div className={item.image_class}>
