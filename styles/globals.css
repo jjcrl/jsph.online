@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Satoshi";
+  src: url(../src/fonts/Satoshi/Satoshi-Regular.otf);
+}
+
+@font-face {
+  font-family: "GT Maru Trial";
+  src: url(../src/fonts/GT_Maru/GT-Maru-Regular-Trial.otf);
+}
+
 * {
   box-sizing: border-box;
   cursor: none;

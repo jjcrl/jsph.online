@@ -58,7 +58,7 @@ const ForecastFaceFonts = () => {
           <p>°</p>
         </div>
 
-        <div className="text-whitesmoke bg-gray-200 grid grid-rows-auto grid-cols-5 w-full py-5">
+        <div className="text-whitesmoke bg-gray-200 grid grid-rows-auto grid-cols-5 w-full py-5 sm:block hidden">
           <p>.</p>
           <p>Aa</p>
           <p>.</p>
