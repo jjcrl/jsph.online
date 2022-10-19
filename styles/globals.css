@@ -4,15 +4,28 @@
 
 @font-face {
   font-family: "Satoshi";
-  src: url(../src/fonts/Satoshi/Satoshi-Regular.otf);
+  src: url(../src/fonts/Satoshi/Satoshi-Regular.otf) format("truetype")
+    font-weight-normal;
+  src: url(../src/fonts/Satoshi/Satoshi-Medium.otf) format("truetype")
+    font-weight-medium;
+  src: url(../src/fonts/Satoshi/Satoshi-Bold.otf) format("truetype")
+    font-weight-bold;
+  src: url(../src/fonts/Satoshi/Satoshi-Black.otf) format("truetype")
+    front-weight-black;
 }
 
 @font-face {
   font-family: "GT Maru Trial";
-  src: url(../src/fonts/GT_Maru/GT-Maru-Regular-Trial.otf);
+  src: url(../src/fonts/GT_Maru/GT-Maru-Regular-Trial.otf) format("truetype")
+    font-weight-normal;
+  src: url(../src/fonts/GT_Maru/GT-Maru-Medium-Trial.otf) format("truetype")
+    font-weight-medium;
+  src: url(../src/fonts/GT_Maru/GT-Maru-Bold-Trial.otf) format("truetype")
+    font-weight-bold;
+  src: url(../src/fonts/GT_Maru/GT-Maru-Black-Trial.otf) format("truetype")
+    font-weight-black;
 }
-
-* {
+*/ * {
   box-sizing: border-box;
   cursor: none;
 }
