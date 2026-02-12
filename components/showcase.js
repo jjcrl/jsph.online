@@ -71,7 +71,7 @@ const ShowCase = ({ items }) => {
           </div>
         </div>
 
-        <div className="w-1/2 bg-black" data-scroll>
+        <div className="w-1/2" data-scroll>
           {items.map((item) => {
             const content = (
               <div
