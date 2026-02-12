@@ -4,26 +4,50 @@
 
 @font-face {
   font-family: "Satoshi";
-  src: url(../src/fonts/Satoshi/Satoshi-Regular.otf) format("truetype")
-    font-weight-normal;
-  src: url(../src/fonts/Satoshi/Satoshi-Medium.otf) format("truetype")
-    font-weight-600;
-  src: url(../src/fonts/Satoshi/Satoshi-Bold.otf) format("truetype")
-    font-weight-bold;
-  src: url(../src/fonts/Satoshi/Satoshi-Black.otf) format("truetype")
-    front-weight-900;
+  src: url(../src/fonts/Satoshi/Satoshi-Regular.otf) format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url(../src/fonts/Satoshi/Satoshi-Medium.otf) format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url(../src/fonts/Satoshi/Satoshi-Bold.otf) format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url(../src/fonts/Satoshi/Satoshi-Black.otf) format("opentype");
+  font-weight: 900;
 }
 
 @font-face {
   font-family: "GT Maru Trial";
-  src: url(../src/fonts/GT_Maru/GT-Maru-Regular-Trial.otf) format("truetype")
-    font-weight-normal;
-  src: url(../src/fonts/GT_Maru/GT-Maru-Medium-Trial.otf) format("truetype")
-    font-weight-600;
-  src: url(../src/fonts/GT_Maru/GT-Maru-Bold-Trial.otf) format("truetype")
-    font-weight-bold;
-  src: url(../src/fonts/GT_Maru/GT-Maru-Black-Trial.otf) format("truetype")
-    font-weight-900;
+  src: url(../src/fonts/GT_Maru/GT-Maru-Regular-Trial.otf) format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GT Maru Trial";
+  src: url(../src/fonts/GT_Maru/GT-Maru-Medium-Trial.otf) format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "GT Maru Trial";
+  src: url(../src/fonts/GT_Maru/GT-Maru-Bold-Trial.otf) format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "GT Maru Trial";
+  src: url(../src/fonts/GT_Maru/GT-Maru-Black-Trial.otf) format("opentype");
+  font-weight: 900;
 }
 
 * {
@@ -68,11 +92,6 @@ h5 {
 h6 {
   font-size: 1.25em;
   line-height: 1.75rem;
-}
-
-h7 {
-  font-size: 1.2rem;
-  line-height: 1.55rem;
 }
 
 u {

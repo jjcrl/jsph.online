@@ -19,7 +19,7 @@ export default function AboutPage() {
         section1={"section1"}
         section2={"section2"}
         section3={"section3"}
-        section4={"secrtion4"}
+        section4={"section4"}
       />
 
       <Footer />

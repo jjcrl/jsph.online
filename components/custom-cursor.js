@@ -1,17 +1,35 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 export default function CustomCursor() {
   const cursorRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
-    if (cursorRef.current == null || cursorRef == null) return;
-    document.addEventListener("mousemove", (e) => {
+    if (typeof window === "undefined") return;
+
+    setIsMobile(window.innerWidth < 640);
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || isMobile) return;
+    if (cursorRef.current == null) return;
+
+    const handleMouseMove = (e) => {
       if (cursorRef.current == null) return;
       cursorRef.current.setAttribute(
         "style",
         "top: " + e.clientY + "px; left: " + e.clientX + "px;"
       );
-    });
-  }, []);
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [isMobile]);
+
+  if (isMobile) return null;
+
   return (
     <>
       <div className="cursor" ref={cursorRef}></div>

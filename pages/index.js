@@ -22,8 +22,8 @@ export default function IndexPage() {
       <WordsSection
         type={1}
         section1="Creative, curious, and always learning."
-        section2="In the new year of 2022 I offically began my coding journey, and I havent stopped writting code since."
-        section3="I like wokring with colour and meaning, problems to solve, imporvments to make."
+        section2="In the new year of 2022 I officially began my coding journey, and I haven't stopped writing code since."
+        section3="I like working with colour and meaning, problems to solve, improvements to make."
         section4="— To simplify and amplify to define and design with clarity, charisma and craft."
       />
       <ShowCase

@@ -50,22 +50,22 @@ const NcNewsEngagement = () => {
       </div>
       <div className="sm:w-1/2 h-full flex flex-col gap-8 justify-end sm:px-10 sm:pb-10 pt-10">
         <h4 className="font-medium">Engagment Tracked</h4>
-        <h7>
+        <p>
           Engagement is center for ncnews, through the site it is display in
           many ways to highlight whats posts are taking off and what users are
           buzzing over. It is tracked and totaled to kepe useres up to date
           whoth what conversations are taking off.
-        </h7>
-        <h7>
+        </p>
+        <p>
           For this symbols are used, and on first visit the user is greeted with
           a run down on what each of them means, so that they can stay in the
           know.
-        </h7>
-        <h7>
+        </p>
+        <p>
           Visual commucagtion with symbols that are introduced from the beging
           to simpliefer the ui and add more data without overloading the user
           with too much reading.
-        </h7>
+        </p>
       </div>
     </div>
   );

@@ -13,11 +13,11 @@ export default function ContactPage() {
                 <h4>Hello</h4>
                 <h6>
                   Do you have a question, or a problem you would like some fresh
-                  perspective on? Want to collaborate or want to be freinds and
+                  perspective on? Want to collaborate or want to be friends and
                   have a chat and a brew?
                 </h6>
                 <h6>
-                  Whatever it is, feel free to reach out. I'm are happy to talk.
+                  Whatever it is, feel free to reach out. I'm happy to talk.
                 </h6>
                 <br />
                 <h6>

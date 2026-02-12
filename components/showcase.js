@@ -73,6 +73,7 @@ const ShowCase = ({ items }) => {
         <div className="w-1/2 bg-black" data-scroll>
           {items.map((item) => (
             <div
+              key={item.id}
               data-scroll
               data-scroll-id={item.id}
               className="h-screen flex flex-col w-full bg-transparent"
@@ -88,14 +89,13 @@ const ShowCase = ({ items }) => {
         className="flex flex-col w-screen h-full sm:hidden"
       >
         {items.map((item, index) => (
-          <div className="w-screen h-full flex flex-col">
+          <div key={item.id} className="w-screen h-full flex flex-col">
             <div className="h-fit w-fit">
               <Image
                 src={item.mini_image[`image${index + 1}`]}
                 height={555}
                 width={500}
-                loading="lazy"
-                priority={true}
+                alt={item.title}
               />
             </div>
             <div className={item.image_class}>
