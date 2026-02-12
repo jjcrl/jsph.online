@@ -92,7 +92,7 @@ const ShowCase = ({ items }) => {
           <div key={item.id} className="w-screen h-full flex flex-col">
             <div className="h-fit w-fit">
               <Image
-                src={item.mini_image[`image${index + 1}`]}
+                src={item.mini_image}
                 height={555}
                 width={500}
                 alt={item.title}
