@@ -37,14 +37,21 @@ module.exports = {
         mustard: "#d4c951",
         dayglow: "#e95b37",
       },
+      screens: {
+        '3xl': '1920px',
+      },
+      maxWidth: {
+        content: '1440px',
+        wide: '1920px',
+      },
       letterSpacing: {
         superwide: "0.35em",
       },
       fontSize: {
-        jumbo: "28rem",
-        big: "20rem",
+        jumbo: "clamp(14rem, 10rem + 8vw, 28rem)",
+        big: "clamp(10rem, 7rem + 6vw, 20rem)",
         xxs: "0.5rem",
-        large: "11rem",
+        large: "clamp(6rem, 4rem + 4vw, 11rem)",
       },
       borderRadius: {
         thick: "5rem",
