@@ -58,7 +58,7 @@ const ForecastFaceFonts = () => {
           <p>°</p>
         </div>
 
-        <div className="text-whitesmoke bg-gray-200 grid grid-rows-auto grid-cols-5 w-full py-5 sm:block hidden">
+        <div className="text-whitesmoke bg-gray-200 grid grid-rows-auto grid-cols-5 w-full py-5 hidden sm:grid">
           <p>.</p>
           <p>Aa</p>
           <p>.</p>
@@ -116,9 +116,7 @@ const ForecastFaceFonts = () => {
         {`
           p {
             font-family: GT Maru Trial;
-            line-height: 1.5rem;
             font-size: 1.75rem;
-            padding: 0.5rem;
             font-weight: 500;
           }
 
