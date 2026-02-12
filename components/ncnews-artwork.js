@@ -11,12 +11,12 @@ const Artwork = () => {
         <h4 className="pt-10 font-medium text-left sm:px-36">
           Generative Grid Artwork
         </h4>
-        <h7 className="m-auto sm:px-36 text-left font-regular">
+        <p className="m-auto sm:px-36 text-left font-regular">
           Creative coding to genreate endless version of grid art, with the web
           apps core colours. Design to create a pefect square in the middle
           should the values align.As always full coruce code can be found on my
           github.
-        </h7>
+        </p>
       </div>
     </div>
   );

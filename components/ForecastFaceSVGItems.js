@@ -20,10 +20,10 @@ const ForecastFaceItems = () => {
         </div>
         <div className="w-full flex flex-col gap-3 px-5 py-10">
           <h5>⁰¹ Todays data, at a glance.</h5>
-          <h7 className="pr-5 text-sm">
+          <p className="pr-5 text-sm">
             At the center of the watch face is the days core pieces of data, so
             you can stay informed at a single glance.
-          </h7>
+          </p>
         </div>
         <div className="w-11/12 bg-ink pt-16 m-auto">
           <p className="text-white px-5 sm:hidden absolute opacity-10 -mt-14">

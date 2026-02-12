@@ -10,9 +10,9 @@ const WordsSection = ({ type, section1, section2, section3, section4 }) => {
             {section1}
           </h4>
           <div className="flex flex-col w-full text-pale opacity-80 px-2 py-5 mix-blend-difference sm:w-2/3 sm:pl-20 font-regular">
-            <h7 className="pb-3">{section2}</h7>
-            <h7 className="pb-7"> {section3}</h7>
-            <h7 className="pb-3">{section4} </h7>
+            <p className="pb-3">{section2}</p>
+            <p className="pb-7"> {section3}</p>
+            <p className="pb-3">{section4} </p>
           </div>
         </>
       ) : (
@@ -21,15 +21,15 @@ const WordsSection = ({ type, section1, section2, section3, section4 }) => {
             {section1}
           </h4>
           <div className="flex flex-col font-regular W-3/4 mt-16 gap-4 pb-10">
-            <h7>{section2}</h7>
-            <h7> {section3}</h7>
+            <p>{section2}</p>
+            <p> {section3}</p>
             <div className="flex gap-4 justify-end w-fit ml-auto">
-              <h7
+              <p
                 className="text-boyblue text-3xl underline font-medium"
                 href={section4}
               >
                 {section4}
-              </h7>
+              </p>
               <span className="text-4xl relative bottom-2 text-boyblue font-bold font-bold">
                 ⟶
               </span>
