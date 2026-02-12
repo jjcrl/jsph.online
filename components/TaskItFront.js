@@ -1,7 +1,7 @@
 const TaskitFront = () => {
   return (
     <section>
-      <div className="w-full h-full bg-zinc-200 overflow-hidden">
+      <div className="w-full h-screen bg-zinc-200 overflow-hidden">
         <div className="flex flex-row w-full h-fit items-center align-center justify-between">
           <div className="w-2/3 h-12 bg-indigo-50 ml-10 rounded-3xl shadow-sm">
             <div className="w-72 bg-lime-500 h-full rounded-l-3xl border-r-4 border-lime-400"></div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import { SmoothScrollContext } from "../src/contexts/SmoothScroll.context";
 
@@ -70,17 +71,27 @@ const ShowCase = ({ items }) => {
           </div>
         </div>
 
-        <div className="w-1/2 bg-black" data-scroll>
-          {items.map((item) => (
-            <div
-              key={item.id}
-              data-scroll
-              data-scroll-id={item.id}
-              className="h-screen flex flex-col w-full bg-transparent"
-            >
-              {item.image}
-            </div>
-          ))}
+        <div className="w-1/2" data-scroll>
+          {items.map((item) => {
+            const content = (
+              <div
+                key={item.id}
+                data-scroll
+                data-scroll-id={item.id}
+                className="h-screen flex flex-col w-full bg-transparent cursor-pointer hover:opacity-90 transition-opacity"
+              >
+                {item.image}
+              </div>
+            );
+
+            return item.url ? (
+              <Link key={item.id} href={item.url}>
+                {content}
+              </Link>
+            ) : (
+              content
+            );
+          })}
         </div>
       </section>
 
