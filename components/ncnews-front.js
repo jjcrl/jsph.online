@@ -1,50 +1,51 @@
 const NcNewsFront = () => {
   return (
     <div className="mocks">
-      <div className="bg-stone-100 w-screen h-screen flex flex-row sm:block hidden justify-center	items-center gap-10 p-5">
+      <div className="bg-stone-100 w-full min-h-screen flex flex-row justify-center items-center gap-6 md:gap-10 p-5 md:p-8">
+        {/* Desktop mockup */}
         <div className="flex flex-col w-2/3 bg-white h-2/3 m-0 rounded-xl shadow-sm">
           <div className="bg-neutral-800 w-full h-6 mt-0 rounded-t-xl flex flex-row justify-start gap-2 pt-2 pl-3 pb-2">
-            <span className="bg-neutral-400 w-2.5 h-2.5 block rounded-2xl"></span>
-            <span className="bg-neutral-500 w-2.5 h-2.5 block rounded-2xl"></span>
-            <span className="bg-neutral-600 w-2.5 h-2.5 block rounded-2xl "></span>
+            <span className="bg-neutral-400 w-2.5 h-2.5 block rounded-full"></span>
+            <span className="bg-neutral-500 w-2.5 h-2.5 block rounded-full"></span>
+            <span className="bg-neutral-600 w-2.5 h-2.5 block rounded-full"></span>
           </div>
-          <div className="flex flex-row gap-5 w-11/12 h-full my-8 px-5 mx-auto">
+          <div className="flex flex-row gap-3 md:gap-5 w-11/12 h-full my-4 md:my-8 px-3 md:px-5 mx-auto">
             <div className="flex flex-col bg-cod w-1/3 h-full rounded-xl">
-              <div className="m-auto w-5/6 flex flex-col text-pale pt-1 ">
-                <span className="text-3xl underline leading-none pb-1">
+              <div className="m-auto w-5/6 flex flex-col text-pale pt-1">
+                <span className="text-lg md:text-2xl lg:text-3xl underline leading-none pb-1">
                   Halal food: Keeping pure & true.
                 </span>
-                <span className="text-lg italic py-2 opacity-40">
+                <span className="text-sm md:text-base lg:text-lg italic py-2 opacity-40">
                   @grumpy19
                 </span>
-                <span className="text-xl leading-none break-normal opacity-80 pb-3">
-                  "China’s cities abound with restaurants and food stalls
+                <span className="text-base md:text-lg lg:text-xl leading-tight break-normal opacity-80 pb-3">
+                  "China's cities abound with restaurants and food stalls
                   catering to Muslims as..."
                 </span>
                 <div className="flex flex-row w-full h-min pt-1">
-                  <div className="flex flex-col  w-1/2  m-0 p-0 pl-1 gap-2 text-blurple -ml-1">
+                  <div className="flex flex-col w-1/2 m-0 p-0 pl-1 gap-2 text-blurple -ml-1">
                     <div className="flex flex-row">
-                      <span className="m-0 p-0 text-5xl italic font-bold">
+                      <span className="m-0 p-0 text-3xl md:text-4xl lg:text-5xl italic font-bold">
                         92{" "}
                       </span>
-                      <span className="text-4xl tracking-tighter text-watermelon font-black -ml-2 -mt-2 opacity-80">
+                      <span className="text-2xl md:text-3xl lg:text-4xl tracking-tighter text-watermelon font-black -ml-2 -mt-2 opacity-80">
                         ++
                       </span>
                     </div>
                     <div className="flex flex-row">
-                      <span className="m-0 p-0 text-5xl italic font-bold">
+                      <span className="m-0 p-0 text-3xl md:text-4xl lg:text-5xl italic font-bold">
                         15{" "}
                       </span>
-                      <span className="text-4xl text-watermelon font-black -ml-1.5 -mt-5 opacity-80">
+                      <span className="text-2xl md:text-3xl lg:text-4xl text-watermelon font-black -ml-1.5 -mt-5 opacity-80">
                         ≡
                       </span>
                     </div>
                   </div>
                   <div className="flex flex-row">
-                    <span className="m-auto p-0 text-7xl italic font-extrabold -ml-5 mt-5 text-blurple">
+                    <span className="m-auto p-0 text-4xl md:text-6xl lg:text-7xl italic font-extrabold -ml-5 mt-5 text-blurple">
                       101{" "}
                     </span>
-                    <span className="m-auto text-6xl text-watermelon font-black -ml-8 -mt-1 opacity-80">
+                    <span className="m-auto text-3xl md:text-5xl lg:text-6xl text-watermelon font-black -ml-8 -mt-1 opacity-80">
                       ¤
                     </span>
                   </div>
@@ -52,164 +53,164 @@ const NcNewsFront = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-5  w-2/3 h-full">
-              <div className="flex flex-row gap-5  m-auto w-full h-full">
-                <div className="w-1/2 h-full  rounded-xl flex flex-col p-1 bg-neutral-100">
+            <div className="flex flex-col gap-3 md:gap-5 w-2/3 h-full">
+              <div className="flex flex-row gap-3 md:gap-5 m-auto w-full h-full">
+                <div className="w-1/2 h-full rounded-xl flex flex-col p-1 bg-neutral-100">
                   <div className="flex flex-col m-auto p-2">
-                    <span className="leading-none text-lg underline opacity-70">
+                    <span className="leading-tight text-sm md:text-base lg:text-lg underline opacity-70">
                       Learn HTML5, CSS3 and responsive web design in one go.
                     </span>
-                    <span className="leading-none text-lg pt-2">
+                    <span className="leading-tight text-sm md:text-base lg:text-lg pt-2">
                       "Both CSS3 and HTML5 are just about fully supported in all
                       mode..."
                     </span>
                   </div>
-                  <div className="flex flex-row justify-between	w-full text-cod leading-none pl-2 pr-2  items-center -mt-2">
+                  <div className="flex flex-row justify-between w-full text-cod leading-none pl-2 pr-2 items-center -mt-2">
                     <div className="flex flex-row">
-                      <span className="m-0 p-0 text-3xl italic font-extrabold">
+                      <span className="m-0 p-0 text-2xl md:text-3xl italic font-extrabold">
                         61{" "}
                       </span>
-                      <span className="text-3xl text-watermelon font-extrabold -ml-2 -mt-2 opacity-80 tracking-tighter	">
+                      <span className="text-2xl md:text-3xl text-watermelon font-extrabold -ml-2 -mt-2 opacity-80 tracking-tighter">
                         ++
                       </span>
                     </div>
                     <div className="flex flex-row">
-                      <span className="m-0 p-0 text-3xl italic font-extrabold">
+                      <span className="m-0 p-0 text-2xl md:text-3xl italic font-extrabold">
                         9{" "}
                       </span>
-                      <span className="text-2xl text-watermelon font-black -ml-2 -mt-2 opacity-80">
+                      <span className="text-xl md:text-2xl text-watermelon font-black -ml-2 -mt-2 opacity-80">
                         ≡
                       </span>
                     </div>
                     <div className="flex flex-row m-0">
-                      <span className="m-0 p-0 text-5xl italic font-extrabold text-blurple ">
+                      <span className="m-0 p-0 text-3xl md:text-4xl lg:text-5xl italic font-extrabold text-blurple">
                         29{" "}
                       </span>
-                      <span className="text-5xl text-watermelon font-black -ml-4 -mt-2 opacity-90">
+                      <span className="text-3xl md:text-4xl lg:text-5xl text-watermelon font-black -ml-4 -mt-2 opacity-90">
                         ¤
                       </span>
                     </div>
                   </div>
                 </div>
-                <div className="w-1/2 h-full bg-neutral-100  rounded-xl flex flex-col">
+                <div className="w-1/2 h-full bg-neutral-100 rounded-xl flex flex-col">
                   <div className="flex flex-col m-auto p-2">
-                    <span className="leading-none text-lg underline opacity-70">
-                      The baltle for Node.js security has begun.
+                    <span className="leading-tight text-sm md:text-base lg:text-lg underline opacity-70">
+                      The battle for Node.js security has begun.
                     </span>
-                    <span className="leading-none text-lg pt-2">
+                    <span className="leading-tight text-sm md:text-base lg:text-lg pt-2">
                       "The founder of Node Security Project says node.js is
                       leading the industry, but..."{" "}
                     </span>
                   </div>
 
-                  <div className="flex flex-row justify-between	w-full text-cod leading-none pl-2 pr-2  items-center -mt-2">
+                  <div className="flex flex-row justify-between w-full text-cod leading-none pl-2 pr-2 items-center -mt-2">
                     <div className="flex flex-row">
-                      <span className="m-0 p-0 text-3xl italic font-extrabold">
+                      <span className="m-0 p-0 text-2xl md:text-3xl italic font-extrabold">
                         20{" "}
                       </span>
-                      <span className="text-3xl text-watermelon font-extrabold -ml-2 -mt-2 opacity-80 tracking-tighter	">
+                      <span className="text-2xl md:text-3xl text-watermelon font-extrabold -ml-2 -mt-2 opacity-80 tracking-tighter">
                         ++
                       </span>
                     </div>
 
                     <div className="flex flex-row">
-                      <span className="m-0 p-0 text-3xl italic font-extrabold">
+                      <span className="m-0 p-0 text-2xl md:text-3xl italic font-extrabold">
                         7{" "}
                       </span>
-                      <span className="text-2xl text-watermelon font-black -ml-1.5 -mt-1.5 opacity-80">
+                      <span className="text-xl md:text-2xl text-watermelon font-black -ml-1.5 -mt-1.5 opacity-80">
                         ≡
                       </span>
                     </div>
 
                     <div className="flex flex-row m-0">
-                      <span className="m-0 p-0 text-5xl italic font-extrabold text-blurple ">
+                      <span className="m-0 p-0 text-3xl md:text-4xl lg:text-5xl italic font-extrabold text-blurple">
                         13{" "}
                       </span>
-                      <span className="text-5xl text-watermelon font-black -ml-4 -mt-2 opacity-90">
+                      <span className="text-3xl md:text-4xl lg:text-5xl text-watermelon font-black -ml-4 -mt-2 opacity-90">
                         ¤
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="flex flex-row gap-5  m-auto w-full h-full">
-                <div className="w-1/2 h-full bg-neutral-100  rounded-xl flex flex-col">
+              <div className="flex flex-row gap-3 md:gap-5 m-auto w-full h-full">
+                <div className="w-1/2 h-full bg-neutral-100 rounded-xl flex flex-col">
                   <div className="flex flex-col m-auto p-2">
-                    <span className="leading-none text-lg underline opacity-70">
-                      The Notorius MSG's unlikely secret to sucsess.
+                    <span className="leading-tight text-sm md:text-base lg:text-lg underline opacity-70">
+                      The Notorious MSG's unlikely secret to success.
                     </span>
-                    <span className="leading-none text-lg pt-2">
+                    <span className="leading-tight text-sm md:text-base lg:text-lg pt-2">
                       "The 'umami' craze has turned and much maligned and
                       mis-understood..."{" "}
                     </span>
                   </div>
 
-                  <div className="flex flex-row justify-between	w-full text-cod leading-none pl-2 pr-2  items-center -mt-2">
+                  <div className="flex flex-row justify-between w-full text-cod leading-none pl-2 pr-2 items-center -mt-2">
                     <div className="flex flex-row">
-                      <span className="m-0 p-0 text-3xl italic font-extrabold">
+                      <span className="m-0 p-0 text-2xl md:text-3xl italic font-extrabold">
                         13{" "}
                       </span>
-                      <span className="text-3xl text-watermelon font-extrabold -ml-2 -mt-2 opacity-80 tracking-tighter	">
+                      <span className="text-2xl md:text-3xl text-watermelon font-extrabold -ml-2 -mt-2 opacity-80 tracking-tighter">
                         ++
                       </span>
                     </div>
 
                     <div className="flex flex-row">
-                      <span className="m-0 p-0 text-3xl italic font-extrabold">
+                      <span className="m-0 p-0 text-2xl md:text-3xl italic font-extrabold">
                         19{" "}
                       </span>
-                      <span className="text-2xl text-watermelon font-black -ml-1.5 -mt-1.5 opacity-80">
+                      <span className="text-xl md:text-2xl text-watermelon font-black -ml-1.5 -mt-1.5 opacity-80">
                         ≡
                       </span>
                     </div>
 
                     <div className="flex flex-row m-0">
-                      <span className="m-0 p-0 text-5xl italic font-extrabold text-blurple ">
+                      <span className="m-0 p-0 text-3xl md:text-4xl lg:text-5xl italic font-extrabold text-blurple">
                         12{" "}
                       </span>
-                      <span className="text-5xl text-watermelon font-black -ml-4 -mt-3 opacity-90">
+                      <span className="text-3xl md:text-4xl lg:text-5xl text-watermelon font-black -ml-4 -mt-3 opacity-90">
                         ¤
                       </span>
                     </div>
                   </div>
                 </div>
 
-                <div className="w-1/2 h-full bg-neutral-100  rounded-xl flex flex-col">
+                <div className="w-1/2 h-full bg-neutral-100 rounded-xl flex flex-col">
                   <div className="flex flex-col m-auto p-2">
-                    <span className="leading-none text-lg underline opacity-70">
-                      Why JavaScript’s Methods are Essential for JavaScript
+                    <span className="leading-tight text-sm md:text-base lg:text-lg underline opacity-70">
+                      Why JavaScript's Methods are Essential for JavaScript
                       Users.
                     </span>
-                    <span className="leading-none text-lg pt-2">
+                    <span className="leading-tight text-sm md:text-base lg:text-lg pt-2">
                       "Functions are objects in JavaScript, as you should know
                       by now..."{" "}
                     </span>
                   </div>
 
-                  <div className="flex flex-row justify-between	w-full text-cod leading-none pl-3 pr-3  items-center -mt-2">
+                  <div className="flex flex-row justify-between w-full text-cod leading-none pl-3 pr-3 items-center -mt-2">
                     <div className="flex flex-row">
-                      <span className="m-0 p-0 text-3xl italic font-extrabold">
+                      <span className="m-0 p-0 text-2xl md:text-3xl italic font-extrabold">
                         15{" "}
                       </span>
-                      <span className="text-3xl text-watermelon font-extrabold -ml-2 -mt-2 opacity-80 tracking-tighter	">
+                      <span className="text-2xl md:text-3xl text-watermelon font-extrabold -ml-2 -mt-2 opacity-80 tracking-tighter">
                         ++
                       </span>
                     </div>
 
                     <div className="flex flex-row">
-                      <span className="m-0 p-0 text-3xl italic font-extrabold">
+                      <span className="m-0 p-0 text-2xl md:text-3xl italic font-extrabold">
                         11{" "}
                       </span>
-                      <span className="text-2xl text-watermelon font-black -ml-1.5 -mt-1.5 opacity-80">
+                      <span className="text-xl md:text-2xl text-watermelon font-black -ml-1.5 -mt-1.5 opacity-80">
                         ≡
                       </span>
                     </div>
 
                     <div className="flex flex-row m-0">
-                      <span className="m-0 p-0 text-5xl italic font-extrabold text-blurple ">
+                      <span className="m-0 p-0 text-3xl md:text-4xl lg:text-5xl italic font-extrabold text-blurple">
                         11{" "}
                       </span>
-                      <span className="text-5xl text-watermelon font-black -ml-4 -mt-3 opacity-90">
+                      <span className="text-3xl md:text-4xl lg:text-5xl text-watermelon font-black -ml-4 -mt-3 opacity-90">
                         ¤
                       </span>
                     </div>
@@ -219,8 +220,10 @@ const NcNewsFront = () => {
             </div>
           </div>
         </div>
+
+        {/* Mobile mockup */}
         <div
-          className=" flex flex-col bg-gray-50 h-3/4 m-0 shadow-lg"
+          className="flex flex-col bg-gray-50 h-3/4 m-0 shadow-lg"
           id="iphone-mockup"
         >
           <div className="bg-neutral-900 w-40 h-5 ml-16 -mt-1 rounded-b-3xl fixed"></div>
@@ -237,20 +240,20 @@ const NcNewsFront = () => {
                 disadvantages with forgoing HTML5 & CSS3."
               </span>
             </div>
-            <div className="-ml-2  -mr-3">
+            <div className="-ml-2 -mr-3">
               <span className="text-xs">
                 You may already know HTML5 and a some CSS3, perhaps you know
                 enough old-school HTML and CSS. You may
               </span>
             </div>
-            <div className="w-24 -mb-28 -ml-2  -mr-1">
+            <div className="w-24 -mb-28 -ml-2 -mr-1">
               <span className="text-xs leading-none">
                 have thought not to learn them..
               </span>
             </div>
           </div>
           <div className="text-blurple tracking-tight text-6xl ml-auto top-4 relative">
-            <span className="font-bold italic text-7xl opacity-90 relative top-3 ">
+            <span className="font-bold italic text-7xl opacity-90 relative top-3">
               66
             </span>
             <span className="text-watermelon font-bold relative right-4 italic tracking-tighter opacity-90">
@@ -268,7 +271,7 @@ const NcNewsFront = () => {
               </div>
             </div>
             <div className="w-10/12 h-max bg-gray-100 m-auto mb-3 rounded-2xl border border-gray-100">
-              <div className="flex flex-row h-10 ">
+              <div className="flex flex-row h-10">
                 <div className="bg-boyblue rounded-full w-4 h-4 mt-5 ml-4"></div>
                 <span className="mt-5 text-xs ml-2 underline opacity-70 tracking-loose">
                   @jimjam
@@ -288,7 +291,7 @@ const NcNewsFront = () => {
               </div>
             </div>
 
-            <div className=" opacity-90 w-40 bg-neutral-300 h-2  rounded-lg relative left-16 bottom-2"></div>
+            <div className="opacity-90 w-40 bg-neutral-300 h-2 rounded-lg relative left-16 bottom-2"></div>
           </div>
         </div>
       </div>
