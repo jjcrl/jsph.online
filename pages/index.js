@@ -34,7 +34,7 @@ export default function IndexPage() {
             description: "Full Stack web development.",
             link: "www.jjcrl-nc-news.netlify.app",
             image: <NcNewsShowcase />,
-            mini_image: { image1 },
+            mini_image: image1,
             id: "showcase-item-0",
             wordsclass: "w-1/2 h-screen bg-blurple",
             image_class:
@@ -46,7 +46,7 @@ export default function IndexPage() {
             description: "Weather data visualisation",
             link: "www.forecast-face.netlify.app",
             image: <TempHandSVG />,
-            mini_image: { image2 },
+            mini_image: image2,
             id: "showcase-item-1",
             wordsclass: "w-1/2 h-screen bg-road",
             image_class: "h-fit w-full p-5 bg-road -mt-5 z-10 text-white gap-1",
@@ -57,7 +57,7 @@ export default function IndexPage() {
             description: "Task managment web app.",
             link: "www.jjcrl-task-managment.netlify.app",
             image: <TaskitFront />,
-            mini_image: { image3 },
+            mini_image: image3,
             id: "showcase-item-2",
             wordsclass: "w-1/2 h-screen bg-lime-500",
             image_class:
